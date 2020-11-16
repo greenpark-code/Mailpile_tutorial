@@ -1,0 +1,2306 @@
+<style>
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.25em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.go-top {
+position: fixed;
+bottom: 2em;
+right: 2em;
+text-decoration: none;
+background-color: #E0E0E0;
+font-size: 12px;
+padding: 1em;
+display: inline;
+}
+
+/* Github css */
+
+html,body{        margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 60em; color:black;}*:not('#mkdbuttons'){margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}body{background-color:#fff;padding:30px;margin:15px;font-size:14px;line-height:1.6}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}@media screen{body{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}body>h2:first-child{margin-top:0;padding-top:0}body>h1:first-child{margin-top:0;padding-top:0}body>h1:first-child+h2{margin-top:0;padding-top:0}body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas,'Liberation Mono',Courier,monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}body{background:#fff;border:0}code{background-color:#fff;color:#333!important;padding:0 .2em;border:1px solid #dedede}pre{background:#fff}pre code{background-color:white!important;overflow:visible}}@media screen{body.inverted{color:#eee!important;border-color:#555;box-shadow:none}.inverted body,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted body{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}
+</style>
+
+<!-- ACTUALLY NECESSARY STYLE STARTS HERE --->
+<style>
+img {
+ border: 2px solid #777;
+}
+
+.fluo_green_bgnd {
+ background-color:#b5ff91;
+ color:black;
+}
+
+.fluo_green_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#b5ff91;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.1em;
+ padding-bottom:0.1em;
+}
+
+.fluo_orange_bgnd {
+ background-color:#ffce91;
+ color:black;
+}
+
+.fluo_orange_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#ffce91;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.lightblue_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#74a5cc;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_security_bgnd_fg {
+ background-color:#8396cf;
+ color:white;
+}
+
+.notEssent_security_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#8396cf;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_CLI_bgnd_fg {
+ background-color:#cf8384;
+ color:white;
+}
+
+.notEssent_CLI_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#cf8384;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_gpg_bgnd_fg {
+ background-color:#accf83;
+ color:white;
+}
+
+.notEssent_gpg_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#accf83;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+/* unused ATM */
+.text2uppercase {
+ text-transform:uppercase;
+}
+
+</style>
+<!-- ACTUAL CONTENT STARTS HERE --->
+<h1 id="mailpile-post-installation-tutorial"><em>Mailpile</em> post-installation tutorial</h1>
+<p><small>Ver. 2020-11-16 05:07:53 UTC (first preview release: 2020-10-06)   –   Based on <em>Mailpile</em> 1.0.0rc6</small></p>
+<div class="lightblue_frame">
+<ul>
+<li><a href="#Disclaimers"><strong>Disclaimers</strong></a></li>
+<li><a href="#Introduction"><strong>Introduction</strong></a>
+<ul>
+<li><a href="#breakthrough"><strong>Breakthrough</strong></a></li>
+<li><a href="#OpenIssues"><strong>Open issues</strong></a></li>
+<li><a href="#notIssuesToBeAwareOf"><strong>Non-issues to be aware of</strong></a></li>
+<li><a href="#EncryptionMadeEasy"><strong>Encryption made easy for non-tech savvies</strong></a></li>
+<li><a href="#Tags"><strong>Tags</strong></a></li>
+<li><a href="#Design"><strong>Design</strong></a></li>
+<li><a href="#EasySetup"><strong>Easy installation and setup</strong></a></li>
+<li><a href="#MultipleAccounts"><strong>Multiple email accounts</strong></a></li>
+</ul></li>
+<li><a href="#HandsOn"><strong>Hands-on session</strong></a>
+<ul>
+<li><a href="#StartingMailpile"><strong>Starting <em>Mailpile</em></strong></a></li>
+<li><a href="#FirstTimeSetup"><strong>First-time setup</strong></a></li>
+</ul></li>
+<li><a href="#AboutKeysAndSecurity"><strong>About keys and security – not essential to use <em>Mailpile</em></strong></a>
+<ul>
+<li><a href="#TypesOfKeys"><strong>Types of keys</strong></a></li>
+<li><a href="#HigherSecurity"><strong>Higher security: superposing encryption levels</strong></a></li>
+<li><a href="#otherCommTools"><strong>Other communication tools than email</strong></a></li>
+<li><a href="#keysTheft"><strong>Keys theft</strong></a></li>
+<li><a href="#keysInHardwareDevice"><strong>Keeping secret subkeys on a hardware device</strong></a>
+<ul>
+<li><a href="#CreatingKeysMovingToHwDevice"><strong>Creating keys and moving them to the hardware device</strong></a>
+<ul>
+<li><a href="#hackersVisit_symptomA"><strong>Possible attack, symptom A</strong></a></li>
+</ul></li>
+<li><a href="#UnblockingYubikey"><strong>Unblocking the <em>Yubikey</em> after repeated introduction of the wrong PIN/passphrase</strong></a>
+<ul>
+<li><a href="#hackersVisit_symptomB"><strong>Possible attack, symptom B</strong></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#KeepingSecretsStoredApart"><strong>Keeping secret subkeys stored apart and making them available when necessary</strong></a></li>
+<li><a href="#OverYourShoulder"><strong>Over your shoulder</strong></a></li>
+<li><a href="#airGapped"><strong>&quot;Air-gapped&quot;</strong></a></li>
+<li><a href="#PerfectlySuitable"><strong><em>Mailpile</em> perfectly suitable if you also need to decrypt/encrypt apart</strong></a></li>
+</ul></li>
+<li><a href="#backToHandsOn"><strong>Back to our hands-on session</strong></a>
+<ul>
+<li><a href="#accessingEmailAccount"><strong>Accessing an email account</strong></a></li>
+<li><a href="#MoreAccounts"><strong>More accounts</strong></a>
+<ul>
+<li><a href="#CopyOfTheRemoteFoldersStructureInSidebar"><strong>Copy of the remote folders structure and content is accessible in the sidebar</strong></a></li>
+<li><a href="#MailpileWithGMail"><strong>Configuring <em>Google Mail</em> accounts in <em>Mailpile</em></strong></a></li>
+</ul></li>
+<li><a href="#MovingEmailsToTheTrash"><strong>Moving emails to the trash</strong></a></li>
+<li><a href="#UsingTags"><strong>Using tags</strong></a>
+<ul>
+<li><a href="#CreatingATag"><strong>Creating a tag</strong></a></li>
+<li><a href="#MovingEmailsToATag"><strong>Moving emails to a tag</strong></a></li>
+<li><a href="#OrganizingSidebar"><strong>Organizing Your Sidebar</strong></a></li>
+<li><a href="#EditingTagsSettings"><strong>Editing tags settings</strong></a></li>
+</ul></li>
+<li><a href="#LogoutShutdownOrDirectlyShutdown"><strong>Logout + shutdown or directly the latter</strong></a></li>
+<li><a href="#BackupOfMailpileSettings"><strong>Backup of <em>Mailpile</em> settings</strong></a></li>
+<li><a href="#tagsAsAttributes"><strong>Tags as attributes</strong></a></li>
+<li><a href="#nestedTags"><strong>Nested tags (subtags)</strong></a>
+<ul>
+<li><a href="#tagAutomation"><strong>(Tag Automation)</strong></a></li>
+</ul></li>
+<li><a href="#removingTagsFromEmails"><strong>Removing tags from emails</strong></a></li>
+<li><a href="#ComposingAndSendingAnEmail"><strong>Composing and sending an email</strong></a></li>
+</ul></li>
+<li><a href="#Mailpile_CLI"><strong>The Command Line Interface (CLI) – not essential to use <em>Mailpile</em></strong></a>
+<ul>
+<li><a href="#clearingTheCLI"><strong>Clearing the CLI space</strong></a></li>
+<li><a href="#GettingHelp"><strong>Getting help, switching output format</strong></a></li>
+<li><a href="#SearchingExporting"><strong>Searching, exporting emails</strong></a>
+<ul>
+<li><a href="#SettingNumOfResultsPerPage"><strong>Setting the number of results per page</strong></a></li>
+<li><a href="#ChangingSortOrderCLI"><strong>Changing sort order of search results in the CLI</strong></a></li>
+</ul></li>
+<li><a href="#deletingEmails"><strong>Definitive deletion of emails</strong></a>
+<ul>
+<li><a href="#EnablingDeletion"><strong>In the GUI: enabling deletion of emails</strong></a></li>
+<li><a href="#SettingDaysInTrash"><strong>In the GUI: setting the number of days in the trash before automatic definitive deletion of emails</strong></a></li>
+<li><a href="#ImmediatelyEmptyingTrash"><strong>Immediately emptying the trash (or part of it) using the CLI</strong></a></li>
+</ul></li>
+<li><a href="#TaggingUntaggingUsingTheCLI"><strong>Tagging and untagging emails using the CLI</strong></a>
+<ul>
+<li><a href="#MovingToTheTrashUsingTheCLI"><strong>Moving emails to the trash using the CLI</strong></a></li>
+<li><a href="#MovingOutOfTheTrashUsingTheCLI"><strong>Moving emails out of the trash using the CLI</strong></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#gpgExamples"><strong>Appendix: a few examples with <em>GnuPG</em> on the command line – not essential to use <em>Mailpile</em></strong></a>
+<ul>
+<li><a href="#ListingPubKeys"><strong>Listing the public keys in the keyring</strong></a></li>
+<li><a href="#ListingSecretKeys"><strong>Listing the secret keys in the keyring</strong></a></li>
+<li><a href="#ExportingPubKey"><strong>Exporting a public key from the keyring</strong></a></li>
+<li><a href="#ExportingSecretsFromKeyring"><strong>Exporting secret keys or subkeys from the keyring (not if held in a hardware device)</strong></a></li>
+<li><a href="#Importing"><strong>Importing public or secret keys or subkeys or a revocation certificate</strong></a></li>
+<li><a href="#EncryptingSigning"><strong>Encrypting, signing</strong></a></li>
+<li><a href="#Decrypting"><strong>Decrypting</strong></a></li>
+<li><a href="#DetachSig"><strong>Creating a detached signature and verifying one</strong></a></li>
+<li><a href="#TextSignatureAtTheBottom"><strong>The term &quot;signature&quot; is possibly confusing</strong></a></li>
+<li><a href="#TemporarilyAnotherKeyring"><strong>Temporarily using another keyring</strong></a></li>
+<li><a href="#BeforeSigningKeys"><strong>Before signing somebody else's keys...</strong></a></li>
+</ul></li>
+<li><a href="#__footnotes__"><strong>NOTES</strong></a></li>
+</ul>
+</div>
+<p><br> <a name="Disclaimers"></a></p>
+<h1 id="disclaimers">Disclaimers</h1>
+<div class="fluo_green_frame">
+<p>This tutorial comes with no warranties whatsoever, I'm not a <em>Mailpile</em> expert nor a certified security expert, I've quoted <em>Wikipedia</em> on a few important points and I'm discussing what my own approach is, also mentioning why certain aspects of it actually constitute one of various possible <strong>bets</strong> about possible attacks.</p>
+<p>If reading this document you realize that you can't evaluate this information enough to be able to conclude that it promotes awareness of possible security problems, then you should probably do some research on your own and/or find a knowledgeable person that you can trust.</p>
+<hr />
+<p>This tutorial isn't in any way proceeding from the team of <em>Mailpile</em> developers, it's only my best effort to share hopefully useful information while encouraging more persons to use this powerful email client. All evaluations and opinions expressed here are solely mine.</p>
+<p>NOT BEING ONE OF THE DEVELOPERS AND NOT HAVING CONTACT WITH THEM, I MIGHT AS WELL BE IGNORING USEFUL INFORMATION OR EVEN GETTING SOMETHING WRONG.</p>
+<p>I can not guarantee that I'll be always in condition to update this tutorial in the future, but you can always fork it and improve it.</p>
+<hr />
+<p>In a nonessential <a href="#keysInHardwareDevice">section below</a>, I mention an optional device to hold keys, to hopefully raise the security level against keys theft. I'm not getting <em>any compensation whatsoever</em> from the maker. Again: I'm just sharing possibly useful info. That device happens to be the one I <em>bought</em>, I can't say anything about any others.</p>
+</div>
+<p>If you want to jump hands-on on <em>Mailpile</em>, at least don't miss:</p>
+<ul>
+<li><a href="#imagWithAddTagTechnicalSettings">this picture</a> which could save you <em>some</em> time</li>
+<li><a href="#essentialPoints">this frame</a> with a very few important points</li>
+</ul>
+<p><a name="Introduction"></a></p>
+<h1 id="introduction">Introduction</h1>
+<p>Why <em>Mailpile</em> is so extremely interesting and what should be kept in mind while starting to use it.</p>
+<p><a name="breakthrough"></a></p>
+<h2 id="breakthrough">Breakthrough</h2>
+<p><a href="http://www.mailpile.is"><strong><em>Mailpile</em></strong></a> is a wonderful email client available for <em>Linux</em>, <em>MacOS</em> and <em>Windows</em>.</p>
+<p>I've been using <em>Thunderbird</em>+<em>Enigmail</em> during years by now, but <em>Mailpile</em> has winning features.</p>
+<p><strong>One of its most innovative and important characteristics is that <span class="fluo_green_bgnd">it can very quickly search through encrypted emails</span> without having to decrypt them.</strong> This breakthrough was implemented by mean of a search index.<sup>[<a href="#fn1" id="fnref1">1</a>]</sup></p>
+<p><em>Mailpile</em> enables you to <strong><em>easily</em></strong> send and receive encrypted emails (believe it or not, despite all the info and caveats reported here LOL).</p>
+<p><strong>It keeps your settings and email messages encrypted in your local storage</strong>, optionally also the messages you received unencrypted. You don't need to keep your signatures in separate unencrypted files, easy to read for any intruder.<sup>[<a href="#fn2" id="fnref2">2</a>]</sup></p>
+<p><em>Mailpile</em> interacts with the servers of your email service providers, copying emails and folders to your local storage.</p>
+<p>Optionally, <em>Mailpile</em> removes your emails from the remote servers, <em>not</em> by default (although that would be the philosophy that the project leader recommends to embrace, keep your emails on your computer<sup>[<a href="#fn3" id="fnref3">3</a>]</sup>).</p>
+<p><span class="fluo_orange_bgnd">I still need to find clarifications on a few things, I'll mark them with this color and add &quot;<strong>[needs clarification]</strong>&quot;.</span></p>
+<div class="fluo_orange_frame">
+<p>Disabling &quot;Leave mail on server&quot; in the email accounts settings<sup>[<a href="#fn4" id="fnref4">4</a>]</sup>, my emails are actually disappearing from the remote Inbox folders, although not always at once. I'll see if I can find a way through the GUI or the CLI to:</p>
+<ul>
+<li>immediately delete emails on remote servers and compact remote folders</li>
+<li>check what's the actual situation in remote folders.</li>
+</ul>
+<p>I can do both things connecting in webmail with a browser (I use <em>Firefox</em> and <em>Vivaldi</em>) or with <em>Thunderbird</em>. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+I understand that the developers had to respect priorities during this certainly <em>huge</em> amount of work, and that not all functionalities are already accessible through the Graphical User Interface (or GUI), nor a full documentation is available. <strong>But it's evident that the development has been done with high quality in mind. Just to mention one point: the search engine performance is <a href="#astonishingSearchEngine">astonishing</a>.</strong>
+</div>
+<p><a name="OpenIssues"></a></p>
+<h2 id="open-issues">Open issues</h2>
+<div class="fluo_green_frame">
+<p>Here's the <a name="GitHubMailpileIssues"></a><a href="https://github.com/mailpile/Mailpile/issues">GitHub page for <em>Mailpile</em> issues</a>. I've read a bunch of them, I think that it is possible that some of the issues which appear to be still open have been resolved through other fixes by now. The current development status looks better <em>hands on</em> than on that page.</p>
+<p>Again, I'm using version 1.0.0rc6, which means the 6<sup>th</sup> candidate to become release 1.0.0.</p>
+<ul>
+<li>If you get a &quot;Template Not Found&quot; text (I got it twice in over one month now), try reloading <a href="http://localhost:33411" class="uri">http://localhost:33411</a>, and if that doesn't work, logout from the GUI and login again and you should be fine.</li>
+<li>Emails sent with <em>Mailpile</em> with digital signature but not encrypted, received in <em>Thunderbird</em> ver. 68.10.0 + <em>Enigmail</em> ver. 2.1.6, might result in a message &quot;Unverified signature&quot;. <strong>Signed <u><em>and encrypted</em></u> emails do not present this problem.</strong> It might be more likely to happen when <em>forwarding</em> emails with attachments. Reported <a href="https://github.com/mailpile/Mailpile/issues/2274">here on <em>GitHub</em></a>. I'd normally <em>also encrypt</em> when sending to anybody who is in condition to check signatures (but sometimes you do not know).</li>
+<li>There is a sporadic issue with the <code>search</code> command in the CLI, <a href="#searchSideEffect">see below</a>.</li>
+<li>Another issue to take into account: compatibility with python 3 not achieved yet, it has been <a href="https://github.com/mailpile/Mailpile/issues/2263">mentioned on <em>GitHub</em></a>.</li>
+<li><a name="newEmailNotAppearing"></a>Reported <a href="https://github.com/mailpile/Mailpile/issues/2272">here on GitHub</a>: occasionally <em>Mailpile</em> was not showing a new incoming email which presence on remote servers <em>Thunderbird</em> wasn't failing to reveal. It was happening occasionally with only one of various accounts. A new email arriving into that account (even if sent from the same account, with <em>Mailpile</em> itself or another client) caused <em>Mailpile</em> to immediately correctly show all emails arrived into that account.<br />
+As the report says, there's <strong>possibly a workaround:</strong> add a second source disabling the first one, easily done in the GUI.<sup>[<a href="#fn6" id="fnref6">6</a>]</sup> Then, in case no new emails are appearing in that account, disable the currently active source and enable the other one, and of course let <em>Mailpile</em> connect to the server again.<br />
+<strong>Although nobody else has reported that issue, which is happening with vivaldi.net, this is definitely <em>the</em> only real single important issue in my opinion at the moment, I hope it will be looked into soon, I would be able to recommend <em>Mailpile</em> more effectively.</strong><sup>[<a href="#fn7" id="fnref7">7</a>]</sup></li>
+<li>Icons <a name="toolbarIconsBadlyPositioned"></a>in the toolbar can be badly positioned if the toolbar isn't long enough. <strong>Enlarging the GUI window horizontally</strong> helps, if possible (<a href="#mouseHoverHintsInTheWay">below</a> there is mention of another reason for it).</li>
+</ul>
+</div>
+<p><a name="notIssuesToBeAwareOf"></a></p>
+<h2 id="non-issues-to-be-aware-of">Non-issues to be aware of</h2>
+<ul>
+<li><p><span class="fluo_green_bgnd"><strong>NOTICE:</strong> if you send an email <u><em>to yourself</em></u> from <em>Mailpile</em> itself, <em>Mailpile</em> won't show it in the <em>Inbox</em>, you'll only see it among <em>Sent</em> emails, despite the fact that by default <em>Mailpile</em> sends a copy to your account.</span></p>
+<p>(<u><em>To yourself</em></u> meaning: <u>using <em>Mailpile</em> to send</u> from one to another of the email accounts you have configured in <em>Mailpile</em>, or to the same one from which you are sending.<br />
+You <em>will</em> see that email in <em>Mailpile</em>'s Inbox if you have sent it from another client, e.g. <em>Thunderbird</em>, even if sent from one of the email addresses that you have also configured in <em>Mailpile</em>.)</p>
+<strong>This can be confusing <em>at first</em>, but it's actually a smart way to allow you to handle your emails both in webmail <em>and</em> with <em>Mailpile</em>, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.</strong><br />
+(You can choose at any moment <em>not</em> to send a copy to yourself, and <em>not</em> to leave emails on remote servers.)<br />
+ </li>
+<li>When you add an email account and connect to its server, <em>Mailpile</em> by default starts downloading <em>all</em> emails in it, starting with the most recent ones, it doesn't at the moment offer an option to limit the synchronization to the last <em>n</em> days.<br />
+It has been <a href="https://github.com/mailpile/Mailpile/issues/1098">suggested on <em>GitHub</em></a> to implement the option to limit download to the last <em>n</em> days. The project leader answered explaining that it isn't straightforward to implement that feature without having to parse all emails, considering that certain servers do not maintain an index on date-time.<br />
+ </li>
+<li>I can't see pictures linked to remote storage embedded in emails, despite explicitly asking <em>Mailpile</em> to let me view those pictures.<sup>[<a href="#fn8" id="fnref8">8</a>]</sup><br />
+<strong>I think it isn't an issue but a render feature not yet implemented.</strong><br />
+There's an easy <strong>workaround: <a href="#saveMessageBody">save the email</a> and open it in your browser</strong>.<br />
+It is actually the best thing to do, call it good practice. <em>Your browser</em> is what you use to surf the web with some protection against malign code, with your preferite plugins, and you might launch a <a href="#separateFirefoxInstance"><strong>completely separate session</strong></a> so an attack wouldn't directly arrive into your email client.<br />
+ </li>
+<li><span class="fluo_orange_bgnd">I'll see if I can find a way</span> to tell <em>Mailpile</em> &quot;please <strong>do check right now if there are any new incoming emails&quot;</strong>.<sup>[<a href="#fn9" id="fnref9">9</a>]</sup> Often, when going online after some time offline, <em>Mailpile</em> with default source settings checks right away if there are incoming emails, but sometimes it doesn't. At worst, apparently, it's a matter of 5 minutes.<sup>[<a href="#fn10" id="fnref10">10</a>]</sup><br />
+ </li>
+<li><span class="fluo_orange_bgnd">I'll see if I can find a way</span> to <strong>modify the format of a previously typed in e-mail address</strong>. For instance: I'm sending an e-mail, I type in the recipient's address, let's say info@somegroup.org and, after realizing that only &quot;info&quot; shows up (unless hovering the mouse cursor), I decide to type in a differently formatted address, for instance:
+<ul>
+<li>Some Group <a href="mailto:info@somegroup.org">info@somegroup.org</a></li>
+<li>&quot;Some Group&quot; <a href="mailto:info@somegroup.org">info@somegroup.org</a></li>
+</ul>
+but <em>Mailpile</em> will always reduce it to what I had typed before, showing just &quot;info&quot;. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span><br />
+ </li>
+<li><span class="fluo_orange_bgnd">I'll see if I can find a way</span> to <strong>change word wrap settings</strong>.
+<ul>
+<li>I don't always like the outcome of word wrapping (checking how my emails sent with <em>Mailpile</em> look in Thunderbird).</li>
+<li>Saving a draft email implies wrapping. Retaking it, adding some text and sending can let the previous parts wrapped and the new one not wrapped.</li>
+</ul>
+I'd like to be able to just switch it off. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span><br />
+ </li>
+<li>Mouse <a name="mouseHoverHintsInTheWay"></a>hover <strong>hints</strong> in the GUI sometimes get <strong>in the way</strong> of mouse operations, e.g. when deactivating digitally signing one mail. Simply <strong>enlarging horizontally</strong> my browser window solves it (<a href="#toolbarIconsBadlyPositioned">above</a> there is mention of another reason for it).  </li>
+<li>I can't edit the text signature at the bottom from inside a new email (something <em>Thunderbird</em> allows).<br />
+For specific recipients, I might want to modify my signature at the bottom, e.g. omit my cell phone number or PGP related lines.<br />
+Apparently <em>Mailpile</em> obliges me to change the signature in the profile. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></li>
+<li><p><strong>It's <a name="nothingElseWhileDeleting"></a>possibly good practice not to do anything else while <em>Mailpile</em> is permanently deleting emails</strong>. (Today I launched the delete command in the CLIto immediately delete various emails from my huge <em>GMail</em> setup, which was probably going to take a few seconds on this old computer, with fully encrypted index. So, after launching the delete command, I immediately started doing something else via <em>Mailpile</em>'s the GUI. The GUI worked fine but I got a message in the CLI that the delete operation had failed. I launched it again without doing anything else and it went through just fine.)</p></li>
+</ul>
+<p><a name="EncryptionMadeEasy"></a></p>
+<h2 id="encryption-made-easy-for-non-tech-savvies">Encryption made easy for non-tech savvies</h2>
+<p><strong><em>Mailpile</em> can create and manage encryption keys for you, if you prefer, or it can use your own pre-existent keys.</strong></p>
+<div class="fluo_green_frame">
+<p>You can choose whether or not to let <em>Mailpile</em> memorize your keys passphrase, both for keys created by <em>Mailpile</em> and pre-existent keys.</p>
+<p>Would it be more secure to type in the keys passphrase when <em>Mailpile</em> requires it once in a while?</p>
+<p>That's <strong>quite a bet</strong>, I don't know if there are more chances that my keystrokes can be recorded at some point or that the encryption with which <em>Mailpile</em> saves my settings gets compromised (or even that a <a href="https://en.wikipedia.org/wiki/Side-channel_attack">side channel attack</a> grabs my secret keys <em>anyway</em>).<sup>[<a href="#fn11" id="fnref11">11</a>]</sup></p>
+<p>The possibility to use <strong>a hardware device to hold your secret keys</strong> is <a href="#keysInHardwareDevice">mentioned below</a> in this document.</p>
+</div>
+<p><a name="Tags"></a></p>
+<h2 id="tags">Tags</h2>
+<p><em>Mailpile</em>'s GUI enables you to <a href="#UsingTags">classify selected messages</a> by a simple mouse-button click. <strong>Tags</strong> can work in two ways:</p>
+<ul>
+<li><strong>categories</strong> (like folders)</li>
+<li><strong>attributes</strong> (cross-folders groups)</li>
+</ul>
+<p>Tags can also be <strong>nested</strong> one inside another. It is an extremely flexible tool to keep your messages organized.</p>
+<p><a href="#Mailpile_CLI">From the CLI</a>, it is also possible to <a href="#TaggingUntaggingUsingTheCLI">tag and untag emails</a>.<br />
+CLI + tags = a <em>powerful</em> mean to classify or trash or immediately delete huge amounts of emails.</p>
+<p><a name="Design"></a></p>
+<h2 id="design">Design</h2>
+<p>The GUI is <em>beautifully</em> designed, keeping functionality in mind. One of <em>Mailpile</em> creators is a real designer.<sup>[<a href="#fn12" id="fnref12">12</a>]</sup></p>
+<p><a name="EasySetup"></a></p>
+<h2 id="easy-installation-and-setup">Easy installation and setup</h2>
+<p>The installation procedure was very quick and easy on <em>Ubuntu Linux</em> 18.04<sup>[<a href="#fn13" id="fnref13">13</a>]</sup>, following the instructions on their <a href="http://www.mailpile.is">website</a> to add their repository.<sup>[<a href="#fn14" id="fnref14">14</a>]</sup></p>
+<p><a name="MultipleAccounts"></a></p>
+<h2 id="multiple-email-accounts">Multiple email accounts</h2>
+<p><em>Mailpile</em> can handle multiple email accounts, I'm not losing this important feature switching from <em>Thunderbird</em>.</p>
+<div class="fluo_green_frame">
+<p>If you are not already used to having multiple email accounts in the same client at once, you might end up answering from one account an email you had received into another account.</p>
+<ul>
+<li>If you are using different accounts to simply keep things tidy and clearer for you, that's not a big deal.</li>
+<li>If it's a matter of life and death, a mistake might put you in <strong>DANGER</strong>.<br />
+In general, consider triple checking from which account you are sending an email, or consider handling one account at a time.<sup>[<a href="#fn15" id="fnref15">15</a>]</sup>
+</div></li>
+</ul>
+<p><a name="HandsOn"></a></p>
+<h1 id="hands-on-session">Hands-on session</h1>
+<p>Again: I am using <em>Mailpile</em> 1.0.0rc6, which means the 6<sup>th</sup> candidate to become release 1.0.0.</p>
+<p><strong>Here is a basic post installation startup tutorial.</strong></p>
+<p>When I started this tutorial, I would have liked to have more emails to test on already, but with <em>Thunderbird</em> I used to <em>remove</em> emails from remote servers. I <em>enthusiastically</em> wanted to make this tutorial anyway, because I know quite a few different groups of persons who would be glad to use <em>Mailpile</em>, for instance a few journalists, and a friend in a humanitarian non-profit organization that was needing something exactly like <em>Mailpile</em>, to make a transition towards better protection of their supporters' privacy and financial data, while staying compatible with their pre-existent email services <em>and</em> being able to search through encrypted emails.</p>
+<p><a name="StartingMailpile"></a></p>
+<h2 id="starting-mailpile">Starting <em>Mailpile</em></h2>
+<p>On Linux, I start <em>Mailpile</em> from the terminal window:</p>
+<p><em>image 1</em><br />
+<img src="pictures/mailpile__img_001.jpg" alt="img 1" /></p>
+<h2 id="section"><br></h2>
+<p><br> By default, <em>Mailpile</em> launches my web browser to be used as the Graphical User Interface.<sup>[<a href="#fn16" id="fnref16">16</a>]</sup></p>
+<div class="fluo_green_frame">
+<p>The fact that our <strong>web browser</strong> is used as the GUI empowers us to have <strong>various tabs open and connected to <em>Mailpile</em> at the same time, in order to keep going with various tasks</strong>. For instance, I could be preparing an email while searching in others or checking if any new incoming emails need an urgent replay.</p>
+</div>
+<p>Notice the URL: <strong><a href="http://localhost:33411/">localhost:33411</a></strong></p>
+<p>&quot;localhost&quot; means that the web browser itself is connected to <em>Mailpile</em> which is running <em>locally</em> on my own machine, this browser tab does not connect directly to a remote server.</p>
+<p><em>Mailpile</em> in turn is connecting to the remote servers of my email service providers, if possible, or it is enabling me to <strong>work on my emails in local storage, while staying offline</strong>.</p>
+<p><em>image 2</em><br />
+<img src="pictures/mailpile__img_002.jpg" alt="img 2" /></p>
+<h2 id="section-1"><br></h2>
+<br>
+<p class="fluo_green_frame">
+In the terminal window, you'll see that <em>Mailpile</em> also has a Command Line Interface (or just CLI).<sup>[<a href="#fn17" id="fnref17">17</a>]</sup>
+</p>
+<p>This is the command I've used to tell <em>Mailpile</em> <strong>&quot;please send <em>now</em> the emails which already are in the Outbox&quot;</strong>, when I was too impatient to wait during at most 90 seconds, which is the default interval for <em>Mailpile</em> to check if there are any emails in the Outbox:<sup>[<a href="#fn18" id="fnref18">18</a>]</sup><br />
+<code>sendmail</code>&lt;enter&gt;</p>
+<p>I can also access the Command Line Interface via the GUI, clicking the <strong><em>Settings and Tools</em></strong> gear icon in the upper right corner and then the <strong><em>&lt;&gt; CLI</em></strong> button. I prefer the terminal window, which gives me more lines visible at the same time. Both ways, however, I can scroll up to see previous output.</p>
+<p><strong>This document includes <a href="#Mailpile_CLI">a section</a> showing how to search and export emails or search and delete emails with the Command Line Interface.</strong></p>
+<p><em>image 3</em><br />
+<img src="pictures/mailpile__img_003.jpg" alt="img 3" /></p>
+<p>Now let's go back to the GUI.</p>
+<h2 id="section-2"><br></h2>
+<p><br> <a name="FirstTimeSetup"></a></p>
+<h2 id="first-time-setup">First-time setup</h2>
+<p>I'll choose my preferred language and click the <strong><em>Begin</em></strong> button.</p>
+<p><em>image 4</em><br />
+<img src="pictures/mailpile__img_004.jpg" alt="img 4" /></p>
+<h2 id="section-3"><br></h2>
+<p><br> <a name="password"></a>I'm asked to type a password. Afterwards, the same password will be <em>necessary</em> to unlock the whole setup with my settings and emails.</p>
+<p>It can actually be a passphrase made of various words separated by spaces. <em>Mailpile</em> itself suggests a sequence of words, I prefer to <em>create my own sequence</em> some of which modified from any vocabulary (avoiding obvious substitutions which would be part of hackers' dictionaries anyway), including uppercase and lowercase letters, numbers and special characters. After checking that no smartphone cameras or webcams are around, <strong>I write it down on paper first (no cameras around) and type it in afterwards, and keep the paper somewhere safe during the first few days.</strong> (The same when I <a href="#changePassword">change</a> it.)</p>
+<p>But you might have other methods.</p>
+<p><strong>Just don't lose or forget it!</strong></p>
+<p><em>image 5</em><br />
+<img src="pictures/mailpile__img_005.jpg" alt="img 5" /></p>
+<h2 id="section-4"><br></h2>
+<p><br></p>
+<p><em>image 6</em><br />
+<img src="pictures/mailpile__img_006.jpg" alt="img 6" /></p>
+<p>After typing in the same password twice, I'm going to click the <strong><em>Set Mailpile Password</em></strong> button.</p>
+<h2 id="section-5"><br></h2>
+<p><br> And I'm ready to go.</p>
+<p><em>image 7</em><br />
+<img src="pictures/mailpile__img_007.jpg" alt="img 7" /></p>
+<h2 id="section-6"><br></h2>
+<p><br></p>
+<p><em>image 8</em><br />
+<img src="pictures/mailpile__img_008.jpg" alt="img 8" /></p>
+<h2 id="section-7"><br></h2>
+<p><br> On my first login, I am guided through the few easy basic setup steps.</p>
+<p><em>image 9</em><br />
+<img src="pictures/mailpile__img_009.jpg" alt="img 9" /></p>
+<h2 id="section-8"><br></h2>
+<p><br></p>
+<p><em>image 10</em><br />
+<img src="pictures/mailpile__img_010.jpg" alt="img 10" /></p>
+<p>I scroll down...</p>
+<h2 id="section-9"><br></h2>
+<p><br> <a name="stronglyEncryptIndex_slow"></a></p>
+<p><em>image 11</em><br />
+<img src="pictures/mailpile__img_011.jpg" alt="img 11" /></p>
+<p>My personal choice here is to change the above defaults as in the next picture, <strong>BUT</strong> you should read <a href="#warningSlow">this note</a> before deciding.</p>
+<h2 id="section-10"><br></h2>
+<p><br> <a name="SecurityAndPrivacySettingsModifiedFromDefaults"></a></p>
+<p><em>image 12</em><br />
+<img src="pictures/mailpile__img_012.jpg" alt="img 12" /></p>
+<p>(Later, I've created a <a href="#MailpileFolderDefaultLocation">separate <em>Mailpile</em> setup</a> with my <a href="#MailpileWithGMail"><em>GMail</em></a> accounts (which I'd like to progressively abandon). <em>Mailpile</em> fetched <em>some</em> years of emails. My PC is <a href="#FastDespiteManyEmails">not too slow</a> for these settings, even with over 46k emails exceeding 14 GB.)</p>
+<p>And I'll click the <strong><em>Save Settings</em></strong> button.</p>
+<div class="fluo_green_frame">
+You might want to read <a href="#UseSharedGnuPGkeychain">below</a> about the third setting I'm modifying: <strong><em>Use shared GnuPG keychain for PGP encryption keys</em></strong>
+</div>
+<h2 id="section-11"><br></h2>
+<p><br></p>
+<p><em>image 13</em><br />
+<img src="pictures/mailpile__img_013.jpg" alt="img 13" /></p>
+<h2 id="section-12"><br></h2>
+<p><br></p>
+<p><em>image 14</em><br />
+<img src="pictures/mailpile__img_014.jpg" alt="img 14" /></p>
+<p>I'll type in the name I want to be displayed with this email address and the email address itself.</p>
+<h2 id="section-13"><br></h2>
+<p><br></p>
+<p><em>image 15</em><br />
+<img src="pictures/mailpile__img_015.jpg" alt="img 15" /></p>
+<p>And I'll click the <strong><em>Next</em></strong> button.</p>
+<h2 id="section-14"><br></h2>
+<p><br></p>
+<p><em>image 16</em><br />
+<img src="pictures/mailpile__img_016.jpg" alt="img 16" /></p>
+<br> <a name="essentialPoints"></a>If you <strong>lack</strong> the <strong>time or will</strong> to read the following &quot;not essential&quot; section, then read this frame content (but I'd recommend that someday you read the part you are skipping now):<br />
+
+<div class="fluo_green_frame">
+<p>If anything more complicated than &quot;normal&quot;<sup>[<a href="#fn19" id="fnref19">19</a>]</sup> unencrypted emails means no encryption at all for you, then let's choose the easiest way for now, <em>any</em> level of security on your emails is better than none.</p>
+<ol style="list-style-type: decimal">
+<li>Check out <a href="#separateFirefoxInstance">this recommendation</a>.</li>
+<li><strong>Remember <a name="forwardSecrecy"></a>that encrypting doesn't mean that you can be absolutely sure that your messages are and will always be secure</strong>.<br />
+<em>GnuPG</em> doesn't support <strong>&quot;forward secrecy&quot;</strong>: <span class="fluo_green_bgnd">if a key is compromised then the secrecy of all past messages encrypted with it is compromised.</span><br />
+<strong>You can periodically revoke secret subkeys (or even preliminary set an expiration date on them)</strong> and create new ones, but it's not the same as having different keys for each communication session.</li>
+<li>Flip a coin to choose your key type. <a href="#ImayChoseRSA4096despite">I may still choose RSA4096 for now</a>, despite <a href="#Kleptography_NSA"><strong>RSA Security having been the target of strong accusations of adding backdoors</strong></a>. I may <a href="#HigherSecurity">add further encryption levels</a> with other encryption types for important messages.</li>
+<li>Let <em>Mailpile</em> create and manage your keys for now.</li>
+<li>Click the button and move on to the <a href="#accessingEmailAccount">next step</a>.</li>
+</ol>
+</div>
+<p><br></p>
+<big><span class="notEssent_security_bgnd_fg">This is not essential to use <em>Mailpile</em></span></big> <a name="AboutKeysAndSecurity"></a>
+<div class="notEssent_security_frame">
+<h1 id="about-keys-and-security-not-essential-to-use-mailpile">About keys and security – not essential to use <em>Mailpile</em></h1>
+<p><strong><em>Mailpile</em></strong>, just as <em>Thunderbird</em>+<em>Enigmail</em>, can work in combination with <a href="https://www.gnupg.org/"><strong><em>GNU Privacy Guard</em></strong></a> to use all keys in its &quot;keyring&quot; (or &quot;keychain&quot;).</p>
+<p>We can let <em>Mailpile</em> handle <em>gpg</em> to create keys for us and totally manage them, or we can use <em>gpg</em> from a terminal window to create keys, import keys, export keys, and also encrypt symmetrically or asymmetrically, sign files, sign other persons' keys...</p>
+<p>(I didn't plan to put any <em>GnuPG</em> commands in this document, because there are many good tutorials out there, but after mentioning <em>Mailpile</em> in an online&lt;=&gt;<a href="#airGapped">air-gapped</a> workflow, I ended up doing so in an <a href="#gpgExamples">appendix</a>.)</p>
+<p><strong><em>Mailpile</em> will be able to use any keys that we might import directly with <em>gpg</em> into its keyring.</strong></p>
+<p><a name="UseSharedGnuPGkeychain"></a></p>
+<div class="fluo_orange_frame">
+<p>Please <strong>NOTE</strong> that one of the Security and Privacy settings I <a href="#SecurityAndPrivacySettingsModifiedFromDefaults">modified above</a> was <u><strong><em>Use shared GnuPG keychain for PGP encryption keys</em></strong></u> and I activated it.</p>
+<p><u><strong>I haven't tested at all what happens with &quot;Off&quot;, what follows is pure speculation and that setting might even have another meaning.</strong></u> <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<p><span class="fluo_orange_bgnd">If you do not want to have anything to do directly with <em>GnuPG</em>, you might want to leave that &quot;Off&quot;, I don't know if doing so would imply a higher security level. <strong>[needs clarification]</strong></span></p>
+<p>I prefer to be able to fully use <em>Mailpile</em> in combination with <em>gpg</em> on the command line.</p>
+<p>Besides, in the <a href="https://github.com/mailpile/Mailpile/issues">GitHub page for <em>Mailpile</em> issues</a>, I've seen <span class="fluo_orange_bgnd">reports about difficulties to import keys via <em>Mailpile</em>'s GUI, while it's trivial to import keys with <em>GnuPG</em>'s command line:</span></p>
+<p><code>gpg --import filename</code></p>
+<p>(Those issues may have been solved by now. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span>)</p>
+<p>As for the security level: I prefer to create my own keys apart with GnuPG, I set a stronger passphrase on my keys than <em>Mailpile</em>'s current passphrases, alphanumeric instead of numeric-only, and I keep the primary secret key stored apart, I only export secret subkeys and import them into the keychain I actually use. This way, <strong>the primary secret key remains valid as a long-term identity key</strong>, I can always revoke the secret subkeys, periodically or if I think that they might be compromised, and create new ones.</p>
+<p>Unless you <em>really</em> prepare the whole <em>Mailpile</em>+<em>GnuPG</em> setup on some <a href="#airGapped">air-gapped</a> machine, this approach might actually turn out to be weaker than leaving it all to <em>Mailpile</em>, because at some point you would have to <strong>type</strong> the keys passphrase, at least twice, once when importing into the keyring, and once for <em>Mailpile</em>, and you don't know if those keystrokes are being recorded... This is about <strong>bets</strong>, make yours. If there isn't an option to prepare the whole <em>Mailpile</em>+<em>GnuPG</em> setup on some <a href="#airGapped">air-gapped</a> machine (at least for creating keys and moving secret subkeys to a <a href="#keysInHardwareDevice">hardware device</a>), then leaving it all to <em>Mailpile</em> might be the best bet after all.</p>
+<p>On the other hand, you'll be typing <em>Mailpile</em>'s login password anyway, so the encryption on your local storage might also get compromised... well if somebody's <strong>&quot;watching over your shoulder&quot;</strong>, then simply nothing can be kept secure on that machine, unencrypted or decrypted messages will be exposed as well.</p>
+<p>Better chances of security would be gained by also encrypting/decrypting exclusively on an <a href="#airGapped">air-gapped</a> machine, better if with a supposedly audited Operative System like <em>Tails</em>, especially at the moment of keys generation, to avoid <a href="#Kleptography_NSA">Kleptography</a>.</p>
+<p>As for purely brutal force attacks on <span class="fluo_orange_bgnd">the local storage</span> encryption, they wouldn't probably be successful for a few more years.<br />
+<span class="fluo_orange_bgnd">I don't know at the moment what type of encryption it is. <strong>[needs clarification]</strong></span><br />
+The current PGP key of <em>Mailpile</em>'s developers team is EdDSA, a type of ECC, so maybe the local encryption scheme is also based on ECC. I've quoted something <a href="#EdDSA_ECC">below</a> about that.</p>
+<p>Anyways:</p>
+<ul>
+<li><p><strong>If you do leave it all to <em>Mailpile</em>, you probably have one more good reason to always keep an updated backup copy of <a href="#MailpileFolderDefaultLocation">the whole <em>Mailpile</em> folder</a> (not only <em>Mailpile</em>'s settings backed up via <a href="#settingsBackup">the <em>Backup</em> button</a>), and <em>also</em> a backup copy of the <em>Mailpile</em> package that you have installed and has been running fine.</strong><br />
+<span class="fluo_green_bgnd">Keeping a backup is a good practice anyway, <strong><em>Borg</em></strong> is a <em>very</em> good de-duplicating incremental backup utility, I hear from a very knowledgeable friend that <strong><em>Duplicata</em></strong> is another good one... or you might just copy the whole folder (in Linux: ~/.local/share/Mailpile).</span></p></li>
+<li><p><strong>If a frequent backup of the whole <em>Mailpile</em> folder is <em>really</em> not an option for you for <em>who knows</em> what reason:</strong></p>
+<p>Unless your philosophy is to &quot;read and destroy&quot; received encrypted emails, <span class="fluo_orange_bgnd">you should see if you can backup your secret keys anyway – and not only their passphrase<sup>[<a href="#fn20" id="fnref20">20</a>]</sup> – so you'd still be able to decrypt new incoming messages in case you run into problems with <em>Mailpile</em>. I won't investigate for now how to do that in case <a href="#UseSharedGnuPGkeychain">that option</a> is left &quot;off&quot;. <strong>[needs clarification]</strong></span></p></li>
+</ul>
+<p>I describe <a href="#keysInHardwareDevice">below</a> how I handled secret keys for a <em>Yubikey 5 NFC</em>.</p>
+</div>
+<p><a name="TypesOfKeys"></a></p>
+<h2 id="types-of-keys">Types of keys</h2>
+<p>Keys can be of different <strong>types</strong>. Compatibility with Autocrypt mentioned below is &quot;as far as I've read&quot;, it could be outdated info (but <span class="fluo_green_bgnd">a few tests</span> are enough to understand that it is a secondary importance matter):</p>
+<ul>
+<li><strong>EdDSA256</strong>, compatible with Autocrypt 1.1, which means that even the message subject will be encrypted, thus limiting the amount of data left visible by SMTP, the Send Mail Transfer Protocol<sup>[<a href="#fn21" id="fnref21">21</a>]</sup></li>
+<li><strong>RSA3072</strong>, compatible with Autocrypt 1.0</li>
+<li><strong>RSA4096</strong>, not compatible with Autocrypt... but when testing I see that <span class="fluo_green_bgnd">both <em>Mailpile</em> and <em>Thunderbird</em>+<em>Enigmail</em> circumvent the problem, only showing <strong>&quot;(Subject unavailable)&quot;</strong> or <strong>&quot;...&quot;</strong> as the email subject once it has been encrypted, revealing the original subject at the moment of decryption</span>. A correspondent using a client not implementing the same workaround would be able to read the subject anyway at the beginning of the message body, once decrypted.<br />
+In any case: we can always arrange to write generic/allusive subjects not needing encryption.</li>
+</ul>
+<p><a name="ImayChoseRSA4096despite"></a><strong>Please share</strong> if you have more information to evaluate for this choice.</p>
+<p><span class="fluo_green_bgnd"><strong>I may choose RSA4096</strong> as the basic key type associated with an account</span>, considering – and <span class="fluo_green_bgnd"><em>despite</em></span> – what follows, and considering the recommendations I've found in various <strong>tutorials</strong> about creating <em>GnuPG</em> keys, <a href="#perfectKeypair">one</a> is mentioned in the <a href="#gpgExamples">appendix with examples of usage of <em>GnuPG</em> in a <em>Linux</em> terminal command line</a>.</p>
+<p>After reading below about <a href="#Kleptography_NSA">Kleptography</a>, you'll wonder, as I do:</p>
+<center>
+Were the tutorials I've seen made by backdoors creators pushing their trojan horses?<br />
+I don't think so,<br />
+but the truth is:<br />
+<big><strong>I don't know</strong></big><sup>[<a href="#fn22" id="fnref22">22</a>]</sup>
+</center>
+<p>Let's see what Glenn Greenwald uses<sup>[<a href="#fn23" id="fnref23">23</a>]</sup>, I guess he learned from Edward Snowden:<sup>[<a href="#fn24" id="fnref24">24</a>]</sup></p>
+<pre><code>pub   rsa4096/0xA4A928C769CD6E44 2015-01-06 [SCA] [expires: 2021-01-19]
+      734A3680A438DD45AF6F5B99A4A928C769CD6E44
+uid                   [ unknown] Glenn Greenwald &lt;Glenn.Greenwald@theintercept.com&gt;
+uid                   [ unknown] Glenn Greenwald &lt;Glenn.Greenwald@riseup.net&gt;
+uid                   [ unknown] Glenn Greenwald &lt;GlennGreenwald@firstlook.org&gt;
+uid                   [ unknown] Glenn Greenwald &lt;Glenn.Greenwald@firstlook.org&gt;
+sub   rsa4096/0x30B33AC842F37B85 2015-01-06 [E] [expires: 2021-03-05]</code></pre>
+<p>That's one point for RSA4096.</p>
+<p>And another one: <em>Mailpile</em> developers themselves qualify as &quot;strong&quot; the RSA4096 key type in that pull-down menu, meaning that they don't have elements against RSA4096 either (and they seem to know what they are doing, <em>Mailpile</em> can actually use or not use the pre-installed gpg-agent and gpg binary).</p>
+<p>Now one point less for EdDSA:</p>
+<p><a name="EdDSA_ECC"></a> This page tells us that <strong>EdDSA is based on elliptic-curve cryptography</strong>:<br />
+<a href="https://en.wikipedia.org/wiki/EdDSA"><strong>EdDSA</strong> – https://en.wikipedia.org/wiki/EdDSA</a><br />
+Such encryption, with shorter keys, might be as hard to break as RSA encryption with larger keys... <strong>except for quantum computing attacks</strong>.</p>
+<p>Let's quote from this other page (please visit the page to also read those footnotes):<br />
+<a href="https://en.wikipedia.org/wiki/Elliptic_curve_cryptography"><strong>Elliptic-curve cryptography</strong> – https://en.wikipedia.org/wiki/Elliptic_curve_cryptography</a></p>
+<blockquote>
+<p><strong>Quantum computing attacks</strong></p>
+<p>Shor's algorithm can be used to break elliptic curve cryptography by computing discrete logarithms on a hypothetical quantum computer. The latest quantum resource estimates for breaking a curve with a 256-bit modulus (128-bit security level) are 2330 qubits and 126 billion Toffoli gates.<sup><sub><del>[43]</del></sub></sup> In comparison, using Shor's algorithm to break the RSA algorithm requires 4098 qubits and 5.2 trillion Toffoli gates for a 2048-bit RSA key, <span class="fluo_green_bgnd">suggesting that ECC is an easier target for quantum computers than RSA. All of these figures vastly exceed any quantum computer that has ever been built, and estimates place the creation of such computers as a decade or more away.</span>[citation needed]</p>
+<p>Supersingular Isogeny Diffie–Hellman Key Exchange provides a post-quantum secure form of elliptic curve cryptography by using isogenies to implement Diffie–Hellman key exchanges. This key exchange uses much of the same field arithmetic as existing elliptic curve cryptography and requires computational and transmission overhead similar to many currently used public key systems.<sup><sub><del>[44]</del></sub></p>
+<p><span class="fluo_green_bgnd">In August 2015, the NSA announced that it planned to transition &quot;in the not distant future&quot; to a new cipher suite that is resistant to quantum attacks. &quot;Unfortunately, the growth of elliptic curve use has bumped up against the fact of continued progress in the research on quantum computing, necessitating a re-evaluation of our cryptographic strategy.&quot;</span></p>
+</blockquote>
+<p><a name="HigherSecurity"></a></p>
+<h2 id="higher-security-superposing-encryption-levels">Higher security: superposing encryption levels</h2>
+<p>Whatever setup we have chosen now, if in the future we need a higher security level on some emails we can superpose one or more encryption steps.</p>
+<ul>
+<li><p><strong>we create apart another key</strong> (primary + subkeys), our correspondent does the same</p>
+<p>&quot;apart&quot; meaning possibly on <em>Tails</em> (see <strong>Kleptography</strong> <a href="#Kleptography_NSA">below</a>), because <em>GnuPG</em> on <em>Tails</em> should undergo stricter auditing than for instance on <em>Ubuntu</em> and <em>Windows</em><sup>[<a href="#fn25" id="fnref25">25</a>]</sup>, it could be an <a href="#airGapped">air-gapped</a> computer or the keys could stay on a <a href="#keysInHardwareDevice">hardware device</a></p></li>
+<li><strong>we encrypt apart</strong> using <em>gpg</em> command line, with the --armor option</li>
+<li><p><strong>we paste the result</strong> of the encryption into our email body <strong>or attach it</strong> (in which case better avoid the --armor option not to unnecessarily inflate size), so our message will be <strong>encrypted twice</strong> with two different keys (or more than two).</p></li>
+</ul>
+<p>This is not difficult at all, at least on any <em>Linux</em>-based machine (I can only guess that <em>gpg</em> takes the same command line syntax in <em>Windows</em>). Just check out the <a href="#gpgExamples">appendix on <em>GnuPG</em></a>, especially <a href="#EncryptingSigning">this part</a>.</p>
+<p><a name="otherCommTools"></a></p>
+<h2 id="other-communication-tools-than-email">Other communication tools than email</h2>
+<p>The &quot;encrypt apart and attach or copy&amp;paste&quot; modus operandi opens the possibility to use <em>GnuPG</em> to add secrecy to other communication channels instead of e-mail, e.g. <em>Threema</em> via <a href="https://web.threema.ch">web.threema.ch</a> or <em>Signal</em> via its desktop app (without forgetting that our smartphones are probably the least secure devices around), or maybe <a href="https://element.io/">Element</a>, which is mentioned in this <a href="https://www.privacytools.io/software/real-time-communication/">interesting page on privacytools.io</a>. Without forgetting that <em>GnuPG</em> doesn't support <a href="#forwardSecrecy">forward secrecy</a>.</p>
+<p><a name="keysTheft"></a></p>
+<h2 id="keys-theft">Keys theft</h2>
+<p>After plainly stealing my secret keys <em>from storage space</em>, the attacker should <em>crack</em> its encryption. I'm setting <em>strong passphrases</em>, but today's computers are increasingly fast (and keystrokes could be monitored/recorded).</p>
+<p><a name="keysInHardwareDevice"></a></p>
+<h2 id="keeping-secret-subkeys-on-a-hardware-device">Keeping secret subkeys on a hardware device</h2>
+<div class="fluo_green_frame">
+<p><strong>DISCLAIMER:</strong> I'm not getting <em>any compensation whatsoever</em> from <em>Yubico</em> (alas LOL), I'm just sharing possibly useful info. This device happens to be the one I <em>bought</em>, I can't say anything about any others.</p>
+</div>
+<p>
+</p>
+<div class="fluo_green_frame">
+<p><strong>CAVEAT:</strong> Keeping secret subkeys on a hardware device is probably pretty good against keys theft and should grant that what's <em>signed</em> with your signing subkey is actually signed <em>by you</em>.</p>
+<p><strong>As for secrecy:</strong></p>
+<ul>
+<li>again, the fact that they can't steal your secret subkeys prevents that they can use them elsewhere at will</li>
+<li><strong>BUT</strong>
+<ul>
+<li>your non-encrypted content is still on a non-air-gapped machine in some moment</li>
+<li>your non-encrypted content is <em>passing to/from the hardware device through a USB port</em>, which could be the target of a bad USB exploit.</li>
+</ul></li>
+</ul>
+<p>So, again, I'm afraid that this is about odds and bets and actually guessing.<br />
+And again: letting <em>Mailpile</em> manage your secret keys might also be a good bet after all, or not using a hardware device to keep your keys (lacking certainties, I'm offering a honest analisys, so you can at least <em>evaluate</em> what this is about).</p>
+</div>
+<p>To prevent <strong>keys theft</strong>, an increased level of security would be <strong>a hardware device holding the secret subkeys</strong>, hoping that the device has no back doors.<br />
+Using a hardware device wouldn't necessarily prevent a <a href="https://en.wikipedia.org/wiki/Side-channel_attack">side channel attack</a>... or it possibly would on older PCs, provided they're not phisically exposed to anybody else but the owner.</p>
+<p>Personally, after reading plenty of articles and posts in forums about discoveries of vulnerabilities apparently built in on purpose, I tend to think that the most recent is the hardware you buy from certain brands the most likely it is to come prepared with all sort of tricks to steal your data.</p>
+<p>On a <em>Yubikey 5 NFC</em> (or <em>Yubikey 5 Nano</em>) you'd have to type in the device PIN<sup>[<a href="#fn26" id="fnref26">26</a>]</sup> only once in a while<sup>[<a href="#fn27" id="fnref27">27</a>]</sup> <em>and</em> touch its sensor button (or touch sensitive part) for <em>any</em> single operation required from it. Disabling this request would decrease the level of security against remote hackers, who might possibly be able to decrypt, encrypt or sign something with your secret subkeys, but still, they wouldn't be able to steal them.</p>
+<div class="fluo_green_frame">
+<p>I've given a try at this <em>Yubikey 5 NFC</em> with <em>Mailpile</em> and it works fine (actually <em>Mailpile</em> works with <em>GnuPG</em> which in turns handles the <em>Yubikey</em> nicely).</p>
+<p><strong>Unfortunately</strong> the device can only hold one PGP credential.<sup>[<a href="#fn28" id="fnref28">28</a>]</sup> If you need <em>separate</em> email accounts, you'll have to choose one and keep your other secrets in the gpg keyring as usual. If you don't care if the same <em>GnuPG</em> keys are used with various email accounts/addresses, then plenty of tutorials out there will tell you how to use <em>GnuPG</em> on the command line to add more than one user id to the same key (basically <code>gpg --edit-key &lt;keyID&gt;</code> then <code>adduid</code> then <code>save</code>).</p>
+<p>Or you can use the key you store on the hardware device as described above, as <a href="#HigherSecurity">an additional encryption level</a>, pasting/attaching to an email which is <em>also</em> going to be encrypted with the key associated to that account.</p>
+<p>(A higher security level would be encrypting and decrypting on an <a href="#airGapped">air-gapped</a> machine with keys which secret part never leave that machine, they'd only be stored in the encrypted USB flash drive from which you exclusively boot that machine, and possibly in its backup copy also &quot;touching&quot; only the air-gapped machine.)</p>
+</div>
+<p><a name="CreatingKeysMovingToHwDevice"></a></p>
+<h3 id="creating-keys-and-moving-them-to-the-hardware-device">Creating keys and moving them to the hardware device</h3>
+<p>Here you have a couple of tutorials I read for this <em>Yubikey 5 NFC</em>:</p>
+<ul>
+<li><a href="https://www.thepolyglotdeveloper.com/2019/02/use-yubikey-pgp-signing-encryption-authentication/"><strong>Use A YubiKey For PGP Signing, Encryption, And Authentication</strong> — The Polyglot Developer</a></li>
+<li><a href="https://codingnest.com/how-to-use-gpg-with-yubikey-wsl/"><strong>How to use GPG with YubiKey (bonus: WSL 1 and WSL 2)</strong> — The Coding Nest</a></li>
+</ul>
+<p>A summary of the workflow I followed:</p>
+<ul>
+<li>I also created these keys+subkeys apart, as usual, not on the machine I use online. And <strong>I didn't let the <em>Yubikey</em> create any <em>PGP</em> keys</strong> because otherwise there would be no way to have a backup, as the device is supposed to never give out your secrets.<sup>[<a href="#fn29" id="fnref29">29</a>]</sup></li>
+<li><p>Then I only exported the secret subkeys (not the primary key) with something like this:</p>
+<pre><code>gpg -o SECRET_SUBKEYS --export-secret-subkeys my_email@addr.ess</code></pre></li>
+<li><p>Still on the offline machine, I imported them into another keyring (probably an unnecessary precaution), something like this:</p>
+<pre><code>cd
+mv -i .gnupg .gnupg_before
+install -d -m 700 .gnupg
+gpg -k
+gpg --import SECRET_SUBKEYS</code></pre></li>
+<li>Still on the offline machine, <strong>following the two tutorials mentioned above</strong>:
+<ul>
+<li><strong>I setup strong PINs</strong> (actually passphrases) on the <em>Yubikey</em> (closed cameras around, accurately wrote on paper first, no cameras around, and typed after)</li>
+<li>I moved those secret subkeys to the <em>Yubikey</em> and set it as follows:
+<ul>
+<li>Sensor button touch required to encrypt/decrypt/sign</li>
+<li>NFC disabled for <em>all</em> credential types, it means Near Field Communication, because:
+<ul>
+<li>my smartphone doesn't support it</li>
+<li>I think I won't buy another [fourth] Android phone <em>ever again</em>, after the tracking-you-as-per-Trilateral-Commission-under-Covid-19-pretext API was installed without asking for permission</li>
+</ul></li>
+<li>Entirely disabled support for credential types I'm not using</li>
+</ul></li>
+</ul></li>
+<li>I exported the <em>public</em> key and moved only the <em>public</em> key to the machine I use online, with something like this: <code>gpg -o PUBLIC_KEY --export my_email@addr.ess</code></li>
+<li>Finally I <em>only</em> imported the public key into the <em>GnuPG</em> keychain on this actual destination machine, hence it could never see those secret subkeys:<br />
+<code>gpg --import PUBLIC_KEY</code></li>
+<li><p>After finishing it all, <strong>back to the offline machine</strong>:</p>
+<pre><code>cd
+srm -rf .gnupg
+mv -i .gnupg_before .gnupg</code></pre></li>
+</ul>
+<p>If using the <a href="https://www.yubico.com/products/services-software/download/yubikey-manager/"><strong><em>Yubikey Manager</em></strong></a><sup>[<a href="#fn30" id="fnref30">30</a>]</sup> is a problem on the offline machine, you can leave the last steps for the destination machine before going back online, but with the offline machine you'll have already set up on your <em>Yubikey</em> three strong PINs (or passphrases) after writing them down on paper (no cameras around), one for normal operations, one as admin, one to reset it and unblock it after submitting a mistyped PIN three times. (On the online machine, I'd uninstall the Yubikey Manager, just not to leave it there ready and tempting any intruding hackers to spend additional time messing around.)</p>
+<p>It looks more complicated than it is (of course it requires attention).</p>
+<p><span class="fluo_green_bgnd"><a name="amIBeingTooParanoid"></a><strong>Am I being too paranoid?</strong></span> <strong>I <em>was</em> believing so, before coming to know what's mentioned below about <a href="#airGapped">&quot;air-gapped&quot;</a> (especially <a href="#BeamAndCoating">this part</a> of <a href="#neverTooParanoid">this footnote</a>), and before what happened days ago, two different &quot;weird&quot; facts in the same day:</strong></p>
+<p><a name="hackersVisit_symptomA"></a></p>
+<h4 id="possible-attack-symptom-a">Possible attack, symptom A</h4>
+<p><span class="fluo_green_bgnd">Hours after a successful operation, I found the <em>Yubikey</em>'s PIN blocked</span>, supposedly meaning that 3 attempts with a wrong PIN had been made (but of course I hadn't omitted setting up different PINs/passphrases than the default ones).</p>
+<p><a name="UnblockingYubikey"></a></p>
+<h3 id="unblocking-the-yubikey-after-repeated-introduction-of-the-wrong-pinpassphrase">Unblocking the <em>Yubikey</em> after repeated introduction of the wrong PIN/passphrase</h3>
+<p>In such cases, here is how to unblock the device normal operations PIN (that's what I did with this <em>Yubikey</em>).</p>
+<p class="fluo_green_frame">
+EACH ONE OF THE FOLLOWING COMMAND LINES HAS TO BE TERMINATED WITH THE &lt;ENTER&gt; KEY.
+</p>
+<pre><code>gpg --edir-card
+admin
+help</code></pre>
+<p>choose the menu item which enables you to unblock the normal PIN using the reset one, with this <em>GnuPG</em> version (2.2.4):</p>
+<pre><code>unblock</code></pre>
+<p>to exit:</p>
+<pre><code>quit</code></pre>
+<p>Now, I'm keeping the device plugged into <strong>a HUB with real mechanical switches to cut power to any of its USB slots</strong>. The idea is to leave that switch off unless necessary. Apparently, the device works just fine also via the HUB, I've tested signing some 1.9 GB files and it worked flawlessly. If you do that, <strong><em>before</em> you try to use the <em>Yubikey</em>, be sure that its USB slot is switched ON</strong>.<sup>[<a href="#fn31" id="fnref31">31</a>]</sup></p>
+<p><a name="hackersVisit_symptomB"></a></p>
+<h4 id="possible-attack-symptom-b">Possible attack, symptom B</h4>
+<p><a href="#hackersVisit_symptomA"><strong>The same day</strong></a>, <span class="fluo_green_bgnd">I couldn't eject an USB flash drive, <em>Linux</em> kept warning that the device was busy</span> while I was closing anything else. Finally, it turned out that I could unmount it with no warnings only after closing the last thing I would have deemed responsible, <span class="fluo_green_bgnd">the <em>Firefox</em> browser instance I had been using to surf the web</span>, despite the fact that I hadn't accessed that USB flash drive at all from Firefox and despite having launched <em>Firefox</em> inside firejail (I'll have to review the apparmor and firejail profiles).</p>
+<p><span class="fluo_green_bgnd"><strong>Apparently, you are never too paranoid.</strong></span> And <strong>BTW:</strong></p>
+<a name="separateFirefoxInstance"></a>
+<div class="fluo_green_frame">
+<p>I use a separate <em>Firefox</em> instance to connect to <em>Mailpile</em>, I do not surf the web <em>and</em> connect locally to <em>Mailpile</em> with the same <em>Firefox</em> instance. The one-line bash script I use to launch <em>Firefox</em>:</p>
+<pre><code>firefox -ProfileManager -no-remote -new-instance &quot;$@&quot;</code></pre>
+<p>If you are running out of RAM space, you might possibly save a bit of it by omitting the -no-remote option, with <strong>decreased security level</strong> though.</p>
+<p>Supposedly more secure:</p>
+<pre><code>firejail firefox -ProfileManager -no-remote -new-instance &quot;$@&quot;</code></pre>
+<p>Or you could use a browser, e.g. <em>Vivaldi</em>, to surf the web and another, e.g. <em>Firefox</em>, to connect to <em>Mailpile</em> on your computer, or the other way around.</p>
+</div>
+<p><a name="KeepingSecretsStoredApart"></a></p>
+<h2 id="keeping-secret-subkeys-stored-apart-and-making-them-available-when-necessary">Keeping secret subkeys stored apart and making them available when necessary</h2>
+<p>I've also tested <strong><em>not</em> keeping in the <em>GnuPG</em> keyring the keys for the accounts I've configured in <em>Mailpile</em> until necessary</strong>. Luckily, <em>Mailpile</em> does not complain about a symlinked ~/.gnupg folder (<em>GnuPG</em> detects keyring changes and asks for your passphrases again).<br />
+My conclusion for now, for this trick not to have <em>Mailpile</em> complain and possibly create new keys if you pass through the settings of an account (even if only servers related settings):</p>
+<div class="fluo_green_frame">
+<p>When <em>Mailpile</em> is running, keep in the keyring <em>at least</em> the <em>public</em> keys of the accounts you have configured in <em>Mailpile</em>.</p>
+<p>Before modifying an account settings – and obviously before doing anything requiring signing, encrypting, decrypting – make the secret keys available.<sup>[<a href="#fn32" id="fnref32">32</a>]</sup></p>
+</div>
+<p><a name="OverYourShoulder"></a></p>
+<h2 id="over-your-shoulder">Over your shoulder</h2>
+<p><u><strong>Remember:</strong> apart the chance that the encryption scheme itself gets compromised in the future, or your keys get stolen and their passphrase cracked, there's also the chance that your computer itself might be compromised, with somebody watching &quot;over your shoulder&quot;, no matter how secure your login and keys passphrases are.</u></p>
+<p>Of course it also depends on the level of security you need. Protecting from common criminals is not the same as being a journalist whose sources are up against 9-11'ers.</p>
+<p>But at least <em>slowing down</em> possible bad guys in general is an important step that worldwide citizens should all take.</p>
+<p>You might also need to warn someone, e.g. police forces somewhere in the world, that by analyzing certain news it seems possible that something bad might happen, and you would not want to risk giving out that idea to the bad guys in case it turns out that they hadn't actually thought about it. But it doesn't look like police forces in general, as well as journalists in general, are nowadays &quot;encryption aware&quot; (not that mainstream journalists are up against the &quot;biggest&quot; bad guys around, anyways, it looks more like the opposite... but I was thinking about <em>real</em> journalists).</p>
+<p><a name="airGapped"></a></p>
+<h2 id="air-gapped">&quot;Air-gapped&quot;</h2>
+<p>Staying offline while decrypting and reading a message doesn't guarantee that it will remain secure once you get back online, even if you have securely deleted the unencrypted message. The same consideration is valid for any password you type on your computer, even if used locally.</p>
+<p>Edward Snowden was asking Glen Greenwald to only decrypt/encrypt on an air-gapped machine certain messages.<br />
+That could be for instance:</p>
+<ul>
+<li>an old laptop booting <em>Tails</em> from a USB flash drive</li>
+<li>never again to be connected to any other machine or directly to the Internet</li>
+<li>from which you will have pulled out the WiFi module</li>
+<li>no USB devices to be shared ever with other machines</li>
+<li>data only passing screen-to-cam with QRcodes or via CD/DVD</li>
+<li>shielded room = better, radio waves could vehicle not only information but also malign code (too paranoid?<sup>[<a href="#fn33" id="fnref33">33</a>]</sup>)<br />
+</li>
+<li><a name="phonesWithFMradio"></a>smartphones with FM radio to be kept as far as possible or in a metallic box</li>
+</ul>
+<p>Why the last point? Quote from <a href="https://circuitdigest.com/microcontroller-projects/raspberry-pi-fm-transmitter"><strong>​How to Build a Raspberry Pi FM Transmitter</strong> – Circuit Digest</a>:</p>
+<blockquote>
+<p><span class="fluo_green_bgnd" "="">Every microprocessor will have a synchronous digital system associated with it which is used to reduce the electromagnetic interference. This EMI suppression is done by a signal called Spread-spectrum clock signal or SSCS for short. The frequency of this signal can vary from 1MHz to 250MHz</span> which luckily for us falls within the FM band. So by writing a code to perform frequency modulation using the spread-spectrum clock signal we can tweak the Pi to work as a FM transmitter.</p>
+</blockquote>
+<p><span class="fluo_green_bgnd" "="">If it can transmit radio frequency in a controlled manner, it can transmit data as well (with FM modulation or not).</span></p>
+<p>When it comes to hardware, I tend to think:</p>
+<ul>
+<li>&quot;more recent&quot; = &quot;more chances that the hardware has been prepared for certain tricks&quot; (sad to say, also considering energy consumption)</li>
+<li>certain manufacturers of CPU and chipsets are named more frequently than others in the reports of vulnerabilities which seem to have been built in on purpose, I guess if you follow the money you find out that certain State actors are involved, and I'm not thinking China</li>
+<li>it's plausible that the radio-waves related &quot;vulnerabilities&quot; are not discovered as frequently as others, or not until too late (see this <a href="#neverTooParanoid">previously inserted footnote</a>)</li>
+</ul>
+<p><strong>Closing any sensitive piece of paper before opening any cameras around is a necessary precaution, also for any not air-gapped setup.</strong></p>
+<a name="Kleptography_NSA"></a>
+<div class="fluo_green_frame">
+<p><strong>ATTENTION:</strong> encrypting/decrypting staying air-gapped might not prevent certain tricks, for instance:</p>
+<p><strong>Radio communications:</strong> see <a href="#phonesWithFMradio">just above here</a> and again this <a href="#neverTooParanoid">previously inserted footnote</a>.</p>
+<p><strong><a href="https://en.wikipedia.org/wiki/Kleptography">Kleptography</a>:</strong> for instance <strong>not a truly random or pseudo-random generator at the moment of the creation of your keys</strong>.<br />
+The NSA was accused to have pushed a tricky algorithm as a commercial standard.</p>
+<p><a href="https://en.wikipedia.org/wiki/Dual_EC_DRBG"><strong>Dual_EC_DRBG</strong> – Wikipedia</a></p>
+<blockquote>
+<p>[...] In 2013, The New York Times reported that documents in their possession but never released to the public &quot;appear to confirm&quot; that the backdoor was real, and had been deliberately inserted by the NSA as part of its Bullrun decryption program. In December 2013, a Reuters news article alleged that in 2004, before NIST standardized Dual_EC_DRBG, NSA paid RSA Security $10 million in a secret deal to use Dual_EC_DRBG as the default in the RSA BSAFE cryptography library, which resulted in RSA Security becoming the most important distributor of the insecure algorithm. [...]</p>
+</blockquote>
+<p>This is why I've written &quot;I <em>may</em> choose&quot;, &quot;I'd still choose...&quot;, <span class="fluo_green_bgnd">of course I feel uncomfortable when opting for RSA4096 after reading this</span>.</p>
+<p>I'd be <em>willing</em> to at least <em>hope</em> that these algorithms are somewhat audited by knowledgeable persons worldwide, which is probably why they got caught... although <em>years later</em>, but the truth is:</p>
+<center>
+<big><strong>I don't know</strong></big>
+</center>
+<p><span class="fluo_green_bgnd">For important messages, we might want to <strong><a href="#HigherSecurity">superpose encryption levels</a> made with keys of different types.</strong></span></p>
+<p>Are &quot;RSA Security&quot; really the guys who created the RSA standards used by <em>GnuPG</em>?<br />
+<a href="https://en.wikipedia.org/wiki/RSA_Security"><strong>RSA Security</strong> – Wikipedia</a></p>
+<blockquote>
+<p>[...] RSA is known for allegedly incorporating backdoors developed by the NSA in its products. [...]</p>
+</blockquote>
+<p>Yes, it's definitely them.</p>
+<p>Well, if I were a lawyer, I'd probably think that opting for RSA4096 as the basic key associated to an account, in case of any backdoors at least they wouldn't exploit my customer's messages legally, because that would make public the existence of a backdoor.<br />
+Also, I don't know if there wouldn't be any backdoors with EdDSA or any other standard.</p>
+<p>To be fair, however, I think these algorithms and their implementation is open to auditing by anyone having the time and knowledge to do it... and <em>GnuPG</em> binaries can be <a href="https://www.gnupg.org/download/index.html">downloaded</a> with <a href="#gpgExamples">signatures</a> (it seems to be kind of circular, using <em>GnuPG</em> to verify <em>GnuPG</em> pre-compiled binaries, but you might use an audited version to verify the signature on the new one, at least you know that it is what the developers published).</p>
+</div>
+<p>Moving data air-gapped &lt;=&gt; not air-gapped is a PITA of course, given that USB is a big no no.<sup>[<a href="#fn34" id="fnref34">34</a>]</sup> The smaller the data file is, the faster it is to pass it screen-to-cam fragmented in QRcodes (I've made myself a couple of scripts which do that, TX/RX screen-to-cam). More than a few tens of kBytes =&gt; it's probably faster to burn a rewritable CD or DVD.</p>
+<p><a name="PerfectlySuitable"></a></p>
+<h2 id="mailpile-perfectly-suitable-if-you-also-need-to-decryptencrypt-apart"><em>Mailpile</em> perfectly suitable if you also need to decrypt/encrypt apart</h2>
+<p><strong>You might check out the <a href="#gpgExamples">appendix with examples of <em>GnuPG</em> usage in a <em>Linux</em> terminal window</a>.</strong></p>
+<p>It's easy to add to a <em>Mailpile</em> message some data encrypted apart, you can simply attach the encrypted file to your email.</p>
+<p>If your encryption result is in ASCII format, you can also paste it into the email body, but in case it is a long message, the extraction of your encrypted data to be decrypted offline might not be straightforward, depending on your correspondent's skill level and email client.</p>
+<p><strong><em>Mailpile</em> is perfectly suitable for the &quot;extraction&quot; of a message that you might need to decrypt apart possibly after having moved it to another machine.</strong></p>
+<p>Its Command Line Interface enables to <strong>export</strong> more than one message at a time, you might want to check out the specific <a href="#Mailpile_CLI">section</a> of this document about that.</p>
+<p>The GUI enables to easily save a message body or the whole message format.</p>
+<p><a name="saveMessageBody"></a>You can save the message body to your browser downloads folder, after activating <strong><em>Display HTML formatted message content</em></strong>:</p>
+<p><a name="imageWithEyeIconFrame_A"></a><em>image 16b</em><br />
+<img src="pictures/mailpile__img_016b.jpg" alt="img 16b" /><br />
+<em>(About the picture: a few days have passed since I took the other snapshots in this tutorial, I've received a few more emails and I might have added a couple of tags.)</em></p>
+<p>Or if you need the email source code with its entire format, you can <strong>hover</strong> the mouse cursor as in the following picture to reveal more functionalities:</p>
+<p><a name="imageWithEyeIconFrame_B"></a><em>image 16c</em><br />
+<img src="pictures/mailpile__img_016c.jpg" alt="img 16c" /></p>
+<p><strong>Clicking that small hammer icon</strong>, which mouse hover hint says <strong><em>Display message source code</em></strong>, will open a new tab in your browser, with the whole message as received.<br />
+You can then save that tab content to a file (ctrl-s with <em>Firefox</em> in English).</p>
+</div>
+<h2 id="section-15"><br></h2>
+<p><br> <a name="backToHandsOn"></a></p>
+<h1 id="back-to-our-hands-on-session">Back to our hands-on session</h1>
+<p>As I've chosen for this tutorial to let <em>Mailpile</em> create and manage my keys, I won't have to type the keys passphrase (and/or touch any sensor button on a hardware device).</p>
+<p><a name="accessingEmailAccount"></a></p>
+<h2 id="accessing-an-email-account">Accessing an email account</h2>
+<p>I'm ready to type this email account password, the password I normally type in when accessing my emails in this account.</p>
+<p>By <strong>default</strong>, <em>Mailpile</em> <strong>temporarily remembers</strong> this password, so I won't have to type it in again <strong>during this session</strong>.</p>
+<p>The drop-down menu (call it listbox if you prefer) where you can read &quot;Unlock Account&quot; enables me to choose other behaviors. I could prefer to let <em>Mailpile</em> permanently remember my password for that account (and possibly in the future easily tell it to forget it, <a href="#IncomingMailSettings"><strong>Incoming Mail settings</strong></a> | <strong><em>Forget password</em></strong>.</p>
+<p><em>image 17</em><br />
+<img src="pictures/mailpile__img_017.jpg" alt="img 17" /></p>
+<p>I'll type in my password, I'll leave the default behavior &quot;Unlock Account&quot; and I'll press the button.</p>
+<h2 id="section-16"><br></h2>
+<p><br> <a name="MoreAccounts"></a></p>
+<h2 id="more-accounts">More accounts</h2>
+<p>I get to the following screen, where the <strong>+ <em>Add Account</em></strong> link enables me to add as many accounts as I need.</p>
+<p>Here I have already added a second account.</p>
+<p>Basically, for each account, I had to:</p>
+<ul>
+<li>type in the name and email address of the account</li>
+<li>choose the type and management of encryption keys</li>
+<li>type in the password I always use to access the account</li>
+</ul>
+<p>With <em>Vivaldi</em> (vivaldi.net), I didn't have to modify any settings from what <em>Mailpile</em> had been suggested by Vivaldi's autoconfig server.</p>
+<p>See <a href="#MailpileWithGMail">below</a> for <em>Google Mail</em>.</p>
+<p><em>image 18</em><br />
+<img src="pictures/mailpile__img_018.jpg" alt="img 18" /></p>
+<p>The four icons below the small gear labeled <strong><em>Settings</em></strong> allow me to access the account settings.</p>
+<ul>
+<li><strong>Incoming Mail</strong> settings (can also add/disable/enable email sources for the specific account, <a href="#IncomingMailSettings">here</a> is how to come back to these settings at any moment, hence to the following ones too)</li>
+<li><strong>Outgoing Mail</strong> settings</li>
+<li><strong>Security</strong> settings, <a name="reassigningKeys"></a>including <span class="fluo_green_bgnd">keys</span></li>
+<li><strong>Profile</strong>, including <span class="fluo_green_bgnd">a short text usually called &quot;signature&quot; which I might want at the bottom of my emails</span> (not to be confused with the actual digital signature which guarantees that I'm the author of the message and that the message itself hasn't been altered)</li>
+</ul>
+<p><strong>I don't need to modify anything now, as the default settings and the ones guessed by <em>Mailpile</em> are just fine for me</strong>. I can omit pictures, so this tutorial won't appear unnecessarily (even more) long and scary.</p>
+<div class="fluo_green_frame">
+<p><strong>IMPORTANT NOTICE:</strong> these are actually <strong>sections of the same &quot;dialogue&quot;</strong>.</p>
+<p><strong>When you press the <em>Save</em> button, you are saving the settings in <em>all</em> sections.</strong></p>
+<p>If you are modifying the servers settings but <em>Mailpile</em> doesn't find your secret keys (e.g. because you activated another .gnupg folder and forgot to restore the previous one), then you will also be confirming what's in the other sections of the dialogue, and for &quot;Security and Privacy&quot; you'll be choosing the default behavior in absence of keys, which is, at present, the <strong>creation of new EdDSA keys for the account</strong>.</p>
+<p><strong>Beware that afterwards you might be sending e-mails signed with this new secret key and you might be attaching a new public key, instead of using the pair you had previously associated with this account.</strong></p>
+<p>When you need to leave &quot;dialogue&quot; windows of this kind without modifying anything, you can click the <strong>x</strong> in the upper right corner (you have already seen the &quot;Create a new Account&quot; and &quot;Password Required&quot; dialogues).</p>
+</div>
+<p><a name="CopyOfTheRemoteFoldersStructureInSidebar"></a></p>
+<h3 id="copy-of-the-remote-folders-structure-and-content-is-accessible-in-the-sidebar">Copy of the remote folders structure and content is accessible in the sidebar</h3>
+<p>Notice, in the lower right corner of the above picture, that I mistyped the password of one of the two email accounts I've added.<br />
+In fact, in the <strong>sidebar</strong> on the left I have the <strong>copy of the remote folders structure</strong> of one account only.<br />
+No problem, by clicking the <strong><em>please login</em></strong> link under the notification I will be able to type the password again.</p>
+<p>We'll see <a href="#OrganizingSidebar">below</a> how to <strong>change the order</strong> of the elements appearing in the <strong>sidebar</strong>.</p>
+<h2 id="section-17"><br></h2>
+<p><br> After typing in the correct password:</p>
+<ul>
+<li>the &quot;Invalid username or password&quot; error is no longer there</li>
+<li>in the sidebar on the left I now have the copy of the remote folders structure of <em>both</em> the accounts I've added so far.</li>
+</ul>
+<div class="lightblue_frame">
+<strong>TIP:</strong> If I wanted to disable fetching emails for one account, in its <a href="#IncomingMailSettings">Incoming Mail settings</a> I would &quot;unmark&quot; <strong><em>Enable this mail source</em></strong> and then I'd press the <strong><em>Save</em></strong> button.
+</div>
+<p><em>image 19</em><br />
+<img src="pictures/mailpile__img_019.jpg" alt="img 19" /></p>
+<div class="fluo_orange_frame">
+<p><span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<ul>
+<li><strong>In <em>Thunderbird</em></strong>, when clicking the <strong>Inbox</strong> of an account (on the upper-left part of the GUI), I see the actual content of that remote Inbox at the moment of the last connection.</li>
+<li><span class="fluo_orange_bgnd"><strong>In <em>Mailpile</em></strong>, by what I see when clicking one of those <strong>INBOX</strong> subfolders in the sidebar, I'd say that they are a mean to see <strong><em>all</em> emails</strong> arrived <strong>into <em>that</em> account</strong>, <strong>including the ones we have already moved to tags-categories</strong> (we'll see later), while the <strong>Inbox</strong> link <strong>in the upper part of the sidebar</strong> shows emails arrived into <strong>all</strong> of the configured <strong>accounts</strong> and <strong>not yet moved to any tag-category</strong>.</span></li>
+</ul>
+<p>It's <span class="fluo_orange_bgnd">unclear</span> to me at the moment if there is already a way through <em>Mailpile</em>'s GUI to do the following operations, which are intuitive in <em>Thunderbird</em>:</p>
+<table>
+<tr>
+<td>
+<strong>desired action</strong>
+</td>
+<td>
+<strong>how-to in <em>Thunderbird</em></strong> (being online)
+</td>
+</tr>
+<tr>
+<td>
+check what's actually in the remote folders at the moment
+</td>
+<td>
+left-button click the remote folder
+</td>
+</tr>
+<tr>
+<td>
+immediately remove emails from remote folders
+</td>
+<td>
+drag emails from remote to local folders, or select emails then shift-del
+</td>
+</tr>
+<tr>
+<td>
+&quot;compact&quot; remote folders
+</td>
+<td>
+right-button click and choose &quot;Compact&quot; from the contextual menu (same as for local folders)
+</td>
+</tr>
+</table>
+<p>I can do those things connecting to the account with my web browser in webmail, or with <em>Thunderbird</em>. Actually, I'm doing that progressively less frequently, because I'm seeing that <em>Mailpile</em> is also working fine when configured not to leave emails on servers.</p>
+</div>
+<p><br> I'm going to click the <strong><em>Inbox</em></strong> link in the upper part of the sidebar, just below <strong><em>Drafts</em></strong>.</p>
+<p><br><a name="MailpileWithGMail"></a></p>
+<div class="lightblue_frame">
+<h3 id="configuring-google-mail-accounts-in-mailpile">Configuring <em>Google Mail</em> accounts in <em>Mailpile</em></h3>
+<p>(I'm adding this section days later.)</p>
+<p>At first, I let <em>Mailpile</em> detect all settings, and I was required to authenticate in a pop-up window, but after doing so I got a window from Google saying that I couldn't sign in with this app.</p>
+<p>The solution is to generate an &quot;App password&quot;.</p>
+<ul>
+<li><strong>In <em>GMail</em></strong>, after logging in with my web browser in webmail:
+<ul>
+<li>I clicked my profile icon in the upper right corner</li>
+<li>I clicked <strong><em>Manage your Google Account</em></strong></li>
+<li>On the left I clicked <strong><em>Security</em></strong>, aside the lock icon</li>
+<li>In the &quot;Signing in to Google&quot; section, I clicked <strong><em>App passwords</em></strong>, the rest is guided:
+<ul>
+<li>I typed in a name to remember what that password is about, it can be &quot;Mailpile&quot; or anything else you want</li>
+<li>I was asked to confirm the one among various numbers which was appearing on both screens, phone and web browser on PC</li>
+</ul></li>
+</ul>
+<p><strong>That's all, a password was then visualized ready for me to type or copy and paste in <em>Mailpile</em>.</strong></p></li>
+<li><strong>In <em>Mailpile</em></strong>, after letting it automatically fill-in the Incoming and Outgoing Mail settings:
+<ul>
+<li>I changed the type of authentication from OAuth2 to password, <strong><em>both</em> for Incoming and Outgoing mail</strong></li>
+<li>as the password, I copied&amp;pasted the app password I had on screen from <em>GMail</em></li>
+</ul></li>
+</ul>
+<p>At once, the structure of my remote folders in that account appeared and <em>Mailpile</em> was fetching my emails.</p>
+<p><a name="FastDespiteManyEmails"></a><strong>Despite having now downloaded <a href="#VeryImpressedSearchEngine">almost 17 years of emails (over 46k emails exceeding 14GB)</a> and despite having <a href="#SecurityAndPrivacySettingsModifiedFromDefaults">chosen full index encryption</a>, <em>Mailpile</em> is still very fast searching, <u>a <em>wonderful</em> client undoubtedly</u>.</strong><sup>[<a href="#fn35" id="fnref35">35</a>]</sup></p>
+<p><strong>However</strong>, <a href="#warningSlow">this note</a> mentions what is possibly slower because of having opted for full search index encryption.</p>
+</div>
+<p>Now, back to my <em>Mailpile</em> setup for this tutorial.</p>
+<h2 id="section-18"><br></h2>
+<p><br> Here's my local Inbox.</p>
+<p><a name="MovingEmailsToTheTrash"></a></p>
+<h2 id="moving-emails-to-the-trash">Moving emails to the trash</h2>
+<p>I have four lines saying <strong>&quot;(Subject not available)&quot;</strong>.<br />
+This is because I don't have the keys with which those messages were sent.<sup>[<a href="#fn36" id="fnref36">36</a>]</sup></p>
+<p>Let's move those emails to the trash.</p>
+<p><em>image 20</em><br />
+<img src="pictures/mailpile__img_020.jpg" alt="img 20" /></p>
+<p>Simply:</p>
+<ol style="list-style-type: decimal">
+<li>select the messages by marking their checkboxes on the right</li>
+<li>click the Trash icon</li>
+</ol>
+<p>This is common practice in the interface of various webmail services.</p>
+<p><strong>The following tasks are all very easy in <em>Mailpile</em>:</strong></p>
+<ul>
+<li>enabling definitive deletion of emails</li>
+<li>emptying the trash</li>
+<li>immediately and permanently delete a specific message which is out of the trash or in it</li>
+<li>setting a lower number of days of permanence of emails in the trash before automatic definitive deletion (the default is 91 days)</li>
+</ul>
+<p>You'd better understand the instructions after reading other parts of this tutorial, but you can jump directly <a href="#deletingEmails">there</a> now if you need to.</p>
+<h2 id="section-19"><br></h2>
+<p><br></p>
+<p><em>image 21</em><br />
+<img src="pictures/mailpile__img_021.jpg" alt="img 21" /></p>
+<p>After sending those messages to the Trash, we want to better organize our emails.</p>
+<p><a name="UsingTags"></a></p>
+<h2 id="using-tags">Using tags</h2>
+<p>As mentioned <a href="#tags">above</a> in this tutorial, <em>Mailpile</em> allows to classify messages with <strong>tags</strong>.<br />
+Each tag can work either as a <strong>category</strong> (like a folder) or an <strong>attribute</strong> (cross-folders, possibly assigned to emails of different categories).</p>
+<p><a name="CreatingATag"></a></p>
+<h3 id="creating-a-tag">Creating a tag</h3>
+<p class="lightblue_frame">
+<strong>TIP:</strong> <strong>To create a new tag</strong>, we click the <strong>+ <em>Add</em></strong> link in the lower left corner.
+</p>
+<h2 id="section-20"><br></h2>
+<p><br> In the first section of the tag settings, we can type in the tag name, change its color by clicking on <strong><em>Color</em></strong>, and by clicking the tag icon at its left we can also assign an icon to our new tag.</p>
+<p><em>image 22</em><br />
+<img src="pictures/mailpile__img_022.jpg" alt="img 22" /></p>
+<p>I'll leave to you the pleasure to discover all the <strong>icons</strong>, their design is very nice, actually I wish there were <em>more</em> icons.<sup>[<a href="#fn37" id="fnref37">37</a>]</sup></p>
+<p><a name="willRetakeTagsLater"></a>We'll see below in this doc how to use <a href="#tagsAsAttributes">attributes</a> and <a href="#nestedTags">nested tags</a>.</p>
+<h2 id="section-21"><br></h2>
+<p><br> I'll type <strong><em>Reddit</em></strong> as the tag name and choose the <strong>red color</strong> for it. I'll leave the other settings in this section as per defaults:</p>
+<ul>
+<li>Show in sidebar</li>
+<li>Show in search results</li>
+</ul>
+<p><em>image 23</em><br />
+<img src="pictures/mailpile__img_023.jpg" alt="img 23" /></p>
+<h2 id="section-22"><br></h2>
+<br>
+<div class="fluo_green_frame">
+<p>Let's click <strong><em>Technical Settings</em></strong> to reveal that section.</p>
+<p>I'm leaving <strong><em>None</em></strong> as the <strong>Parent tag</strong> because I don't want this tag to be nested within another.</p>
+<p>I'm leaving <strong><em>Behave as category</em></strong> so it will work like a folder (we'll use attributes later).</p>
+<a name="imagWithAddTagTechnicalSettings"></a>
+<div class="fluo_green_frame">
+<p>I'm selecting <strong><em>Display in toolbar</em></strong><br />
+This might become a default, I believe. <span class="fluo_orange_bgnd">At the moment, I don't see how I would be able to tag emails from the GUI without having my tags in the upper toolbar. <strong>[needs clarification]</strong></span></p>
+<p>Anyways, it's easy to do it from the CLI, there's a <a href="#Mailpile_CLI">section about the CLI</a> below which also shows <a href="#TaggingUntaggingUsingTheCLI">how to tag and untag emails</a>.</p>
+</div>
+<p><em>image 24</em><br />
+<img src="pictures/mailpile__img_024.jpg" alt="img 24" /></p>
+<p>And I'm ready to click the <strong>+ <em>Add</em></strong> button.</p>
+</div>
+<h2 id="section-23"><br></h2>
+<p><br> Here's my newly created tag, in the sidebar on the left.</p>
+<p><em>image 25</em><br />
+<img src="pictures/mailpile__img_025.jpg" alt="img 25" /></p>
+<h2 id="section-24"><br></h2>
+<p><br> <a name="MovingEmailsToATag"></a></p>
+<h3 id="moving-emails-to-a-tag">Moving emails to a tag</h3>
+<p>To move emails to a tag:</p>
+<ol style="list-style-type: decimal">
+<li>after selecting at least one email by marking its checkbox on the right</li>
+<li>my tags appear in the upper toolbar (unless disabled, see <a href="#imagWithAddTagTechnicalSettings">above</a>), and I can click the desired tag in the upper toolbar.</li>
+</ol>
+<p><em>image 26</em><br />
+<img src="pictures/mailpile__img_026.jpg" alt="img 26" /></p>
+<p>I'm going to do it now and move that email to the <strong><em>Reddit</em></strong> tag.</p>
+<div class="lightblue_frame">
+<p><strong>TIP:</strong> had I already created <em>various</em> tags, at this point I might make a mistake and move the email to the wrong tag, thus &quot;losing sight&quot; of that email. In that case, I could <u><strong>either</strong></u>:</p>
+<ol style="list-style-type: decimal">
+<li>search for words that I've seen in the email subject or body, by mean of the search engine, which is accessible
+<ul>
+<li>in the upper portion of the GUI</li>
+<li>through the Command Line Interface, in this case for instance <code>search interesting code</code>&lt;enter&gt;<br />
+(this document includes <a href="#Mailpile_CLI">a section</a> showing how to search and export emails or search and delete emails with the Command Line Interface.).</li>
+</ul>
+<p><u><strong>or</strong></u></p></li>
+<li><p>click the <strong><em>All Mail</em></strong> link just above the lower left corner and look there for the message.<br />
+The <strong><em>All Mail</em></strong> link will show us all messages of all accounts regardless what categories we moved them to or attributes we associated them to.</p></li>
+</ol>
+</div>
+<h2 id="section-25"><br></h2>
+<p><br> Done. As it was an <strong>unread message</strong>, we now see &quot;1&quot; aside the <strong><em>Reddit</em></strong> tag.</p>
+<p class="lightblue_frame">
+<strong>TIP:</strong> Numbers aside an email account or tag are telling us how many <strong>unread messages</strong> are contained there.
+</p>
+<p class="lightblue_frame">
+<strong>TIP:</strong> lines of <strong>unread messages</strong> appear in <strong>bold</strong>.
+</p>
+<p><em>image 27</em><br />
+<img src="pictures/mailpile__img_027.jpg" alt="img 27" /></p>
+<h2 id="section-26"><br></h2>
+<p><br> I'll click the tag in the sidebar on the left to see its content.</p>
+<p><em>image 28</em><br />
+<img src="pictures/mailpile__img_028.jpg" alt="img 28" /></p>
+<p>The message is there, as expected. It is in bold, meaning it's actually still an unread message.</p>
+<h2 id="section-27"><br></h2>
+<p><br> I'm clicking <strong><em>Inbox</em></strong> almost at the top of the sidebar to go back to the local inbox.</p>
+<p>I want to create new tags for the remaining messages, I'll click the <strong>+ <em>Add</em></strong> link in the lower left corner.</p>
+<p><em>image 29</em><br />
+<img src="pictures/mailpile__img_029.jpg" alt="img 29" /></p>
+<h2 id="section-28"><br></h2>
+<p><br> Here you can see that I have created another tag, <strong><em>Syria</em></strong>, and I'm moving various messages to it.</p>
+<p><em>image 30</em><br />
+<img src="pictures/mailpile__img_030.jpg" alt="img 30" /></p>
+<p><a name="OrganizingSidebar"></a></p>
+<h3 id="organizing-your-sidebar">Organizing Your Sidebar</h3>
+<div class="lightblue_frame">
+<p><strong>TIP:</strong></p>
+<ul>
+<li>After clicking <strong><em>Organize</em></strong> close to the lower left corner of the GUI, you can click and drag any of the tags (Inbox, Outbox, etc.) up or down to change its order in the sidebar.<sup>[<a href="#fn38" id="fnref38">38</a>]</sup></li>
+<li>Click <strong><em>Done</em></strong> when you have finished.</li>
+</ul>
+</div>
+<p>This doesn't seem to work with <a href="#nestedTags">nested tags</a>. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<p>We'll see <a href="#EditingTagsSettings">later</a> in this document how to edit tags settings.</p>
+<h2 id="section-29"><br></h2>
+<p><br> Two unread messages are now in the tag <strong><em>Syria</em></strong>.</p>
+<p><em>image 31</em><br />
+<img src="pictures/mailpile__img_031.jpg" alt="img 31" /></p>
+<h2 id="section-30"><br></h2>
+<p><br> I notice that I have two more emails from <em>Reddit</em> left in the Inbox, I'll move them to the <strong><em>Reddit</em></strong> tag as well.</p>
+<p><em>image 32</em><br />
+<img src="pictures/mailpile__img_032.jpg" alt="img 32" /></p>
+<h2 id="section-31"><br></h2>
+<p><br> One of the two was an unread message, which added 1 to the counter of unread messages in the <strong><em>Reddit</em></strong> tag-category.</p>
+<p><em>image 33</em><br />
+<img src="pictures/mailpile__img_033.jpg" alt="img 33" /></p>
+<h2 id="section-32"><br></h2>
+<p><br> I'm going to click the <strong><em>Reddit</em></strong> tag in the sidebar to check its content:</p>
+<p><em>image 34</em><br />
+<img src="pictures/mailpile__img_034.jpg" alt="img 34" /></p>
+<p><a name="IfYouEditTagNameThenEditKeywordToo"></a></p>
+<p>Look in the above picture at the search engine input field after clicking on the tag in the sidebar, in this case we read <strong>&quot;in:reddit&quot;</strong>.</p>
+<p>What we see after the ':' character is <strong>the tag keyword</strong> (<strong>&quot;all:mail&quot;</strong> is an exception to this format).</p>
+<p>We don't see it when creating a tag, it's automatically added by <em>Mailpile</em> according to the tag name, but we <em>can</em> see and modify it later by editing the tag settings, and actually <strong>we want to keep it matched to the tag name</strong> and change both accordingly, in case, so we don't get confused when searching in the CLI.</p>
+<p>(We'll see later that we can use what we see in the search engine input field after clicking a tag to search with the <a href="#Mailpile_CLI">CLI</a>, e.g. <code>search in:inbox</code>&lt;enter&gt;. Then we can export emails, delete, tag or untag them...)</p>
+</div>
+<p><a name="EditingTagsSettings"></a></p>
+<h3 id="editing-tags-settings">Editing tags settings</h3>
+<p>We have seen <a href="#OrganizingSidebar">above</a> how to modify the order of the elements in the sidebar.</p>
+<div class="lightblue_frame">
+<p><strong>TIP:</strong></p>
+<p>To edit the settings of a previously created tag:</p>
+<ul>
+<li>click the tag in the sidebar of the Graphical User Interface</li>
+<li>click the small gear icon or its label <strong><em>Edit</em></strong>, above <strong>on the left</strong>, just below the search engine input field</li>
+</ul>
+<p><strong>If you change the tag name</strong>, you might want to <span class="fluo_green_bgnd">also modify the keyword accordingly</span>, you find it in the <strong><em>Technical Settings</em></strong>.<br />
+So you won't be confused by the results of your future search operations.</p>
+<p>The keyword field is not visible at the moment of the tag creation, it's automatically created from the tag name.</p>
+<p><span class="fluo_orange_bgnd"><strong>Not all characters</strong> are valid for tag keywords, though <strong>[needs clarification]</strong></span>, you'll realize by observing the keyword for the various tags you have created, at the right of &quot;in:&quot; in the search engine input field after you click each tag on the sidebar.</p>
+</div>
+<p>This document includes <a href="#Mailpile_CLI">a section</a> showing how to search and export emails or search and delete emails with the Command Line Interface.</p>
+<h2 id="section-33"><br></h2>
+<p><br> And I'm already back to the inbox with another tag created (<strong><em>Ereticamente</em></strong> is a literary blog hosting various authors), moving a message to it:</p>
+<p><em>image 35</em><br />
+<img src="pictures/mailpile__img_035.jpg" alt="img 35" /></p>
+<h2 id="section-34"><br></h2>
+<p><br> And the following picture shows what's now left untagged in my local inbox, after also moving the message from <em>Mondiaspora</em> to the <strong><em>Diaspora</em></strong> tag.</p>
+<p><a name="LogoutShutdownOrDirectlyShutdown"></a></p>
+<h2 id="logout-shutdown-or-directly-the-latter">Logout + shutdown or directly the latter</h2>
+<p><strong>If I want to exit from <em>Mailpile</em></strong>, I can <u><strong>either</strong></u>:</p>
+<ol style="list-style-type: decimal">
+<li>logout from the GUI then shutdown from the command line interface<br />
+<u><strong>or</strong></u></li>
+<li>go to the settings view and directly click the <strong><em>Shutdown</em></strong> button (we'll see it just <a href="#BackupAndShutdown">below</a> here)</li>
+</ol>
+<p>Here's the first method, I can click the logout button, the one with the <strong><em>0/1</em></strong> icon by now &quot;universally&quot; meaning ON/OFF...</p>
+<p><em>image 36</em><br />
+<img src="pictures/mailpile__img_036.jpg" alt="img 36" /></p>
+<h2 id="section-35"><br></h2>
+<p><br> ... then in the command line interface <code>q</code> and of course the &lt;enter&gt; key</p>
+<p><em>image 37</em><br />
+<img src="pictures/mailpile__img_037.jpg" alt="img 37" /></p>
+<p>If after <em>Mailpile</em> completes its shutdown the terminal prompt appears but not the blinking cursor, I can <u><strong>either</strong></u>:</p>
+<ol style="list-style-type: decimal">
+<li>blindly type <code>reset</code> and of course the &lt;enter&gt; key<br />
+<u><strong>or</strong></u></li>
+<li>ctrl-d to just close that terminal tab or window</li>
+</ol>
+<h2 id="section-36"><br></h2>
+<p><br></p>
+<p><em>image 38</em><br />
+<img src="pictures/mailpile__img_038.jpg" alt="img 38" /></p>
+<h2 id="section-37"><br></h2>
+<p><br> <a name="BackupAndShutdown"></a> Here's the second method. We can go to the settings by clicking the gear icon near the upper right corner of the GUI...</p>
+<p><em>image 39</em><br />
+<img src="pictures/mailpile__img_039.jpg" alt="img 39" /></p>
+<h2 id="section-38"><br></h2>
+<p><br> <a name="settingsBackup"></a></p>
+<p>... and while we are here, we can click the <strong><em>Backup</em></strong> button before leaving.</p>
+<p><a name="BackupOfMailpileSettings"></a></p>
+<h2 id="backup-of-mailpile-settings">Backup of <em>Mailpile</em> settings</h2>
+<div class="lightblue_frame">
+<p><strong>TIP:</strong> You should <em>always</em> click this <strong><em>Backup</em></strong> button <strong>after modifying your settings or creating new keys</strong><br />
+You should also make a backup copy of your <strong>~/.gnupg</strong> folder, or whatever folder you have symlinked as <strong>~/.gnupg</strong></p>
+<p>'~' expands to '/home/username/' or '/root/', it's the user's home folder in <em>Linux</em>, I don't know where the <em>Windows</em> version of <em>GnuPG</em> keeps that folder.</p>
+</div>
+<p><a name="changePassword"></a>(Also notice the <strong><em>Password</em></strong> button, enabling to change the <a href="#password"><em>Mailpile</em> password</a>.)</p>
+<p><em>image 40</em><br />
+<img src="pictures/mailpile__img_040.jpg" alt="img 40" /></p>
+<h2 id="section-39"><br></h2>
+<p><br> My web browser tells me that it has a file for me (just like when I download a file from a remote server, but here the file origin is local).<br />
+I choose to save it.</p>
+<p><em>image 41</em><br />
+<img src="pictures/mailpile__img_041.jpg" alt="img 41" /></p>
+<h2 id="section-40"><br></h2>
+<p><br> I'm going to check if the file is now in the ~/Downloads folder, which is where <em>Firefox</em> is configured to save files on my PC.<sup>[<a href="#fn39" id="fnref39">39</a>]</sup></p>
+<p><em>image 42</em><br />
+<img src="pictures/mailpile__img_042.jpg" alt="img 42" /></p>
+<p>The file is actually there.<br />
+<strong>Its contents are encrypted. However, you never know... I prefer to store it away.</strong></p>
+<a name="handlingSensitiveFiles"></a>
+<div class="lightblue_frame">
+<p><strong>TIP:</strong></p>
+<ul>
+<li><strong>copy, do not move</strong> a sensitive file to a safe place, e.g. an encrypted USB flash device (you can also encrypt the file itself with <em>gpg</em>)</li>
+<li><strong>then, securely delete</strong> the file from your PC.<br />
+On <em>Linux</em> and MacOS you can use cp (not mv), then you can use the <code>srm filename</code> command in the terminal window (<strong>secure-delete</strong> is the name of <strong>the package including srm</strong> in <em>Linux</em> distributions derived <em>Debian</em>, like <em>Ubuntu</em>), or <code>srm -f filename</code> to have faster deletion and impose less work on the disk, or even <code>shred -n 1 -u</code> so that shred overwrites the file only once before deleting it (<strong>coreutils</strong> is the name of <strong>the package</strong> including shred in Debian derivatives).
+</div></li>
+</ul>
+<h2 id="section-41"><br></h2>
+<p><br> <strong>NOTICE:</strong> I have restored my <em>previous</em> <em>Mailpile</em> setup.<sup>[<a href="#fn40" id="fnref40">40</a>]</sup> And a few more days have passed.</p>
+<p><a name="tagsAsAttributes"></a></p>
+<h2 id="tags-as-attributes">Tags as attributes</h2>
+<p>We have already been <a href="#UsingTags">using tags</a>.<br />
+As <a href="#willRetakeTagsLater">promised at the end of that section</a>, here are attributes.</p>
+<div class="fluo_green_frame">
+<p><strong>A tag-attribute enables us to establish that multiple emails belonging to different categories have something in common, and to search for those emails at once</strong>.</p>
+</div>
+<p>One of <em>Mailpile</em>'s icons is <strong>a star icon</strong>.<br />
+I could use it for an <strong><em>Important</em></strong> tag-attribute if I wanted to keep this aspect as in <em>Thunderbird</em>.<br />
+Then, clicking this tag in the sidebar, I'd see all the emails I've tagged as important, possibly belonging to various tags-categories.</p>
+<ul>
+<li>I have created an <strong><em>Important</em></strong> tag-attribute</li>
+<li>I have created an <strong><em>Interesting</em></strong> tag-attribute</li>
+</ul>
+<p>I'm going to click the latter in the sidebar.</p>
+<p><a name="InterestingB4subtags"></a></p>
+<p><em>image 43</em><br />
+<img src="pictures/mailpile__img_043.jpg" alt="img 43" /></p>
+<p>Those emails clearly belong to various tag-categories, or if you want, to various folders.</p>
+<p>I think we can create as many tag-attributes as we need. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong><br />
+However, <a href="#imagWithAddTagTechnicalSettings">if</a> we need to see them in the tool bar in order to use them from the GUI, then there <em>is</em> <a href="#toolbarIconsBadlyPositioned">a practical usability limit</a> to the number of tags we can create, at least for now.<br />
+<strong>Using a greater number of tags from the CLI should never be a problem, though.</strong></p>
+<p>Let's open the tag settings dialogue by clicking the small gear icon or its label <strong><em>Edit</em></strong>, above on the left, below the search engine input field.</p>
+<h2 id="section-42"><br></h2>
+<p><br> In the <strong><em>Technical Settings</em></strong> section of the tag configuration, you can see that <strong><em>Behave as attribute</em></strong> is selected.</p>
+<p><em>image 44</em><br />
+<img src="pictures/mailpile__img_044.jpg" alt="img 44" /></p>
+<h2 id="section-43"><br></h2>
+<p><br> <a name="nestedTags"></a></p>
+<h2 id="nested-tags-subtags">Nested tags (subtags)</h2>
+<p>I have now created two tags nested in the <strong><em>Reddit</em></strong> one.</p>
+<p>(Actually, in this moment I am <em>simulating</em> that I have a use case for subtags.<br />
+In reality, <em>each one</em> of those emails contains notifications from <em>various</em> groups. I'll delete those subtags later.)</p>
+<p><strong>NOTICE: subtags can have a different color from their parent.</strong><br />
+I chose the same on purpose.</p>
+<p>I'm going to click each subtag in the sidebar, and then their parent. <a name="subtagAsCategory_content"></a></p>
+<p><em>image 45</em><br />
+<img src="pictures/mailpile__img_045.jpg" alt="img 45" /></p>
+<p>(We see that some of the emails above have been tagged with the <strong><em>Interesting</em></strong> attribute, one has also the <strong><em>Important</em></strong> attribute.)</p>
+<h2 id="section-44"><br></h2>
+<p><br></p>
+<p><em>image 46</em><br />
+<img src="pictures/mailpile__img_046.jpg" alt="img 46" /></p>
+<h2 id="section-45"><br></h2>
+<p><br> And here's the parent tag content, we see the emails contained in all its subtags:</p>
+<p><em>image 47</em><br />
+<img src="pictures/mailpile__img_047.jpg" alt="img 47" /></p>
+<p>For the emails above, inside the parent tag, the subtags icons now appear as if they were attributes.</p>
+However:<br />
+
+<div class="fluo_green_frame">
+<p><strong>Defining subtags as attributes is not necessary. Any parent tag will show the contents of all its nested tags.</strong><br />
+(We might think of it as a special case of cross-folders search.)</p>
+</div>
+<p>Here, I have actually left them configured as categories.<br />
+<a href="#subtagsAsAttributes">Below</a>, I'm also changing them to attributes.</p>
+<h2 id="section-46"><br></h2>
+<p><br> Let's see the settings of one of the subtags:</p>
+<p><em>image 48</em><br />
+<img src="pictures/mailpile__img_048.jpg" alt="img 48" /></p>
+<h2 id="section-47"><br></h2>
+<p><br></p>
+<p><em>image 49</em><br />
+<img src="pictures/mailpile__img_049.jpg" alt="img 49" /></p>
+<h2 id="section-48"><br></h2>
+<p><br> <a name="tagAutomation"></a></p>
+<h3 id="tag-automation">(Tag Automation)</h3>
+<p>I'm also showing you the <strong><em>Automation</em></strong> section, which I'm not using in this tutorial.</p>
+<p>It should enable me to establish an action which would automatically take place a certain amount of days after tagging an email, choosing among:</p>
+<ul>
+<li><strong>Remove from this tag</strong></li>
+<li><strong>Move to Inbox</strong></li>
+<li><strong>Move to Trash</strong></li>
+<li><strong>Delete e-mails</strong></li>
+</ul>
+<p>Below is the default setup: disabled.</p>
+<p><em>image 50</em><br />
+<img src="pictures/mailpile__img_050.jpg" alt="img 50" /></p>
+<h2 id="section-49"><br></h2>
+<p><br> <a name="removingTagsFromEmails"></a></p>
+<h2 id="removing-tags-from-emails">Removing tags from emails</h2>
+<p>Here are a few ways to remove tags from emails:</p>
+<ul>
+<li>See the picture below: hovering the mouse cursor on an email tag reveals a contextual menu through which we can edit the tag or remove it from that email.</li>
+<li>When you select one or more emails by marking their checkboxes on the right, the rightmost icon in the upper toolbar enables to completely untag that email.</li>
+<li>The <a href="#Mailpile_CLI">CLI</a> enables to very quickly <a href="#TaggingUntaggingUsingTheCLI">remove and add tags</a>.</li>
+<li>Of course, moving one or more emails from tag A to tag B removes tag A from them and adds tag B.</li>
+</ul>
+<p><em>image 51</em><br />
+<img src="pictures/mailpile__img_051.jpg" alt="img 51" /></p>
+<h2 id="section-50"><br></h2>
+<p><br> After clicking the <strong><em>Interesting</em></strong> tag in the side bar, I see that its content now looks a bit different from <a href="#InterestingB4subtags">before</a>:</p>
+<p><em>image 52</em><br />
+<img src="pictures/mailpile__img_052.jpg" alt="img 52" /></p>
+<h2 id="section-51"><br></h2>
+<p><br> <a name="subtagsAsAttributes"></a>If I wanted to <em>also</em> see the parent tag here, I could have set the subtags as attributes instead of categories.</p>
+<p>Here's the result (it's a matter of preferences, comparing the following with the previous picture, I prefer how it looked before, when these subtags where categories):</p>
+<p><em>image 53</em><br />
+<img src="pictures/mailpile__img_053.jpg" alt="img 53" /></p>
+<h2 id="section-52"><br></h2>
+<p><br> Let's see what the content of those subtags looks like now:</p>
+<p><em>image 54</em><br />
+<img src="pictures/mailpile__img_054.jpg" alt="img 54" /></p>
+<h2 id="section-53"><br></h2>
+<p><br></p>
+<p><em>image 55</em><br />
+<img src="pictures/mailpile__img_055.jpg" alt="img 55" /></p>
+<p>Again, I prefer how it looked <a href="#subtagAsCategory_content">when the subtag was a category</a>.</p>
+<h2 id="section-54"><br></h2>
+<p><br> I have clicked the <strong><em>Inbox</em></strong> link almost at the top of the sidebar and I see that I have no untagged messages.</p>
+<p><a name="ComposingAndSendingAnEmail"></a></p>
+<h2 id="composing-and-sending-an-email">Composing and sending an email</h2>
+<p>Now I'd like to compose and send a message. I'm going to click <strong>the pen icon above towards the right</strong>.<br />
+In this case, in my Inbox completely empty, I could also click the <strong><em>Compose a message</em></strong> button.</p>
+<p><em>image 56</em><br />
+<img src="pictures/mailpile__img_056.jpg" alt="img 56" /></p>
+<h2 id="section-55"><br></h2>
+<p><br> Here's the compose message dialogue.</p>
+<p><em>image 57</em><br />
+<img src="pictures/mailpile__img_057.jpg" alt="img 57" /></p>
+<h2 id="section-56"><br></h2>
+<p><br> I've selected from which account I'm sending, I've typed in the recipient address and I've written something in the message body.</p>
+<p>When hovering the mouse cursor on the recipient, a contextual menu appears.</p>
+<p><em>image 58</em><br />
+<img src="pictures/mailpile__img_058.jpg" alt="img 58" /></p>
+<p>Out of curiosity, I'll click the <strong><em>Show Encryption Keys</em></strong> link.</p>
+<p><strong>NOTICE:</strong> this is <em>not</em> a necessary step, I could click the <strong><em>Send</em></strong> button right away.</p>
+<h2 id="section-57"><br></h2>
+<p><br></p>
+<p><em>image 59</em><br />
+<img src="pictures/mailpile__img_059.jpg" alt="img 59" /></p>
+<p>There is some ongoing activity...</p>
+<h2 id="section-58"><br></h2>
+<p><br> ... now finished.</p>
+<p><em>image 60</em><br />
+<img src="pictures/mailpile__img_060.jpg" alt="img 60" /></p>
+<p>I'll close this information window by clicking the <strong>x</strong> in its upper right corner, then I'll click the <strong><em>Save</em></strong> button to save the message as draft or the <strong><em>Send</em></strong> button to send it.</p>
+<p>And this is all for now.</p>
+<p>This tutorial is far from what I'd like it to be. Had I started out with more time available, I would have possibly ended up having less afterthoughts leading to much more time being put into it than reasonably available at the moment, and getting it out better.<br />
+But here it is.</p>
+<h2 id="section-59"><br></h2>
+<br> <a name="Mailpile_CLI"></a> <big><span class="notEssent_CLI_bgnd_fg">This is not essential to use <em>Mailpile</em></span></big>
+<div class="notEssent_CLI_frame">
+<h1 id="the-command-line-interface-cli-not-essential-to-use-mailpile">The Command Line Interface (CLI) – not essential to use <em>Mailpile</em></h1>
+<p>In <em>Mailpile</em>'s Command Line Interface (CLI), you can search for one or more words and then export or delete all the matching messages or some of them.</p>
+<p><a name="clearingTheCLI"></a></p>
+<h2 id="clearing-the-cli-space">Clearing the CLI space</h2>
+<p>To get rid of previous output in the CLI:</p>
+<p><fixed><strong>ctrl-L</strong><fixed> (lowercase or uppercase L, just as in a bash shell)</p>
+<p class="fluo_green_frame">
+EACH ONE OF THE FOLLOWING COMMAND LINES HAS TO BE TERMINATED WITH THE &lt;ENTER&gt; KEY.
+</p>
+<p><a name="GettingHelp"></a></p>
+<h2 id="getting-help-switching-output-format">Getting help, switching output format</h2>
+<p>Let's start by getting some help.<br />
+To get help about the CLI commands (easier to read in text format than json format), just type the help command:</p>
+<pre><code>help</code></pre>
+<p>If the output format is not plain text but something else, you can switch to text:</p>
+<pre><code>output text</code></pre>
+<p>Should you need your results in json or html format, you can switch like this:</p>
+<pre><code>output json</code></pre>
+<pre><code>output html</code></pre>
+<p><span class="fluo_green_bgnd"><strong>Don't forget how to switch back to text:</strong></span></p>
+<pre><code>output text</code></pre>
+<p><a name="unwantedOutputFormatSwitch"></a></p>
+<div class="fluo_orange_frame">
+<p><a name="searchSideEffect"></a><strong>Sometimes, as an unwanted side effect of a search, my output got switched to json.</strong> Switching back to text and repeating the same search was consistently having the same unwanted side effect. I guess the issue has been reported. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+Sometimes, when that happened, after doing a search with zero matches (searching for a word I don't have in any emails), I could with no surprises launch the same search which had been triggering the unwanted output format change. Sometimes that didn't work, it was possibly a coincidence.
+</div>
+<p><a name="SearchingExporting"></a></p>
+<h2 id="searching-exporting-emails">Searching, exporting emails</h2>
+<p>Before executing an <code>export</code> command, you need to execute a <code>search</code> one.</p>
+<p>To search:<br />
+search word another whatever</p>
+<p>or:<br />
+s word another whatever</p>
+<div class="fluo_green_frame">
+<em>All</em> these words must be present <em>in one email</em> for a match to be triggered.<br />
+The match is apparently case insensitive.
+</div>
+<p>In case any emails match your search, they'll appear in lines preceded by numbers. To export them all into one text file:</p>
+<pre><code>export all</code></pre>
+<p>Notice that <code>e</code> would be the shortcut for <em>another</em> command: Extract attachment(s) to file(s).</p>
+<p>Here's what happens if I export the 2<sup>nd</sup>, 7<sup>th</sup>, 8<sup>th</sup> and 9<sup>th</sup> matching emails (the first line is my command):</p>
+<pre><code>export 2,7-9 &lt;enter&gt;
+Elapsed: 0.208s (export: Exported 4 messages to mailpile-1602723517.mbx)
+
+{
+    &quot;created&quot;: &quot;mailpile-1602723517.mbx&quot;, 
+    &quot;exported&quot;: 4
+}</code></pre>
+<p><strong>I find the resulting text file in my home folder.</strong> Opening the file <strong>~/mailpile-1602723517.mbx</strong> and searching for &quot;Subject: &quot; confirms that it contains all those emails, although in different order.<br />
+The help text mentions a few optional parameters to the export command that I haven't tried out yet.</p>
+<p>To see all emails in the <strong><em>Reddit</em></strong> tag:<br />
+s in:reddit</p>
+<p><strong>Result:</strong></p>
+<pre><code>Elapsed: 0.002s (search: search)
+
+  1   Reddit               &quot;A more complex take on the b  (Important)22 hours
+  2   Reddit              *&quot;Hi, i tried to make a message with a one   Monday
+  3   Reddit              *&quot;[D] How do I encrypt and decrypt a messag  Sunday
+  4   Reddit               &quot;How to tell how an encrypted message wa  Saturday
+  5   Reddit               &quot;S/MIME SSL Question&quot;                       Friday
+  6   Reddit               &quot;PLONK by Hand (Part 1: Setup)&quot;           Thursday
+  7   Reddit               &quot;A Year and a Half of End-to-End Encryptio  Oct 06
+  8   Reddit               &quot;someone give me this code but i don&#39;t hav  Oct 05
+  9   Reddit              *&quot;I have a quite interesting code that a fr  Oct 04
+ 10   Reddit              *&quot;What is the connection between stream cip  Oct 03
+ 11   Reddit               &quot;ccrypt alternative for windows (without c  Oct 02</code></pre>
+<p>Let's search in the <strong><em>Reddit</em></strong> tag for something more specific:<br />
+s in:reddit encrypt</p>
+<p><strong>Result:</strong></p>
+<pre><code>Elapsed: 0.012s (search: Found 3 results in 0.012s)
+
+  1   Reddit                  &quot;ccrypt alternative for windows (without cygw...&quot;  Oct 02
+  2   Reddit                 *&quot;[D] How do I encrypt and decrypt a message u...&quot;  Sunday
+  3   Reddit                  &quot;A more complex take on the braille  (Important)Wednesday</code></pre>
+<p>Notice that the message which was result number 4 of the previous search didn't match now, searching for &quot;encrypt&quot; didn't match &quot;encrypted&quot;:</p>
+<p class="fluo_green_frame">
+<em>Mailpile</em> is matching whole words.
+</p>
+<p>Wildcards do not seem to work, encrypt* doesn't match encrypted, I don't know yet whether or not there is a way to enable <em>partial matches</em>, I guess it would be <em>much slower</em> to also search for partial matches. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<p>Even if it turned out that there is no way...</p>
+<a name="VeryImpressedSearchEngine">
+<div class="fluo_green_frame">
+<p><strong>I'm <em>very</em> impressed with the search engine, it's very fast. I've also tested searching through encrypted emails and it works just the same.</strong></p>
+<p></a>Days later: I'm downloading years of emails from a GMail account, I already have 4.7 GBytes, 7344 emails (and still downloading, they might sum up 12 GBytes), and <strong>I'm getting answers from the search engine in the CLI in 0.002-0.090 sec on a 10+ years old computer, with fully encrypted search index.</strong> About an hour later, I have 5.9 GB, 8886 mails (still downloading) and I'm getting search results in 0.002 1.178 seconds (the 1.178 seconds one was then always repeated in 0.215 seconds, maybe the disk was busy with something else the first time).**</p>
+</div>
+<p>Don't forget the <a href="#IfYouEditTagNameThenEditKeywordToo"><strong>recommendation</strong></a> I've included in a previous section of this document.</p>
+<p><a name="SettingNumOfResultsPerPage"></a></p>
+<h3 id="setting-the-number-of-results-per-page">Setting the number of results per page</h3>
+<p>If on the GUI I click the <strong><em>Settings and Tools</em></strong> gear icon in the upper right corner and then the <strong><em>Preferences</em></strong> button, I get to the <strong><em>Search results per page</em></strong> drop-down menu. I can set a value not exceeding what can be displayed on my terminal window. I could also scroll up and down the terminal window, but it might be more confusing than using the commands <em>Mailpile</em> offers:</p>
+<p><code>n</code> next page<br />
+<code>p</code> previous page</p>
+<p>Of course I could you both resources, 120 lines per page and I'll scroll through them in the terminal line.</p>
+<p>The chosen value will affect both the GUI and the terminal window, I haven't found out if it's possible (without using the python shell) to set two different values. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<p><a name="ChangingSortOrderCLI"></a></p>
+<h3 id="changing-sort-order-of-search-results-in-the-cli">Changing sort order of search results in the CLI</h3>
+<p>The help text says that I can change sort order with the <code>o</code> command, quote:</p>
+<blockquote>
+<p>o|order     &lt;how&gt;          Sort by: date, from, subject, random or index</p>
+</blockquote>
+<p>These two give me an &quot;Unknown sort order&quot; error <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span>:</p>
+<pre><code>o from</code></pre>
+<pre><code>o subject</code></pre>
+<p>The other ones seem to work fine and the result of the last search are displayed again in the expected manner.</p>
+<p>I haven't seen how to revert the sort order in the CLI. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></p>
+<p>(The GUI, from the &quot;hamburger&quot; menu below the <strong>0/1</strong> <strong>ON/OFF</strong> logout icon, allows to choose &quot;Newest First&quot; or &quot;Oldest First&quot;.)</p>
+<p><a name="deletingEmails"></a></p>
+<h2 id="definitive-deletion-of-emails">Definitive deletion of emails</h2>
+<p>(You might want to check out <a href="#nothingElseWhileDeleting">this recommendation</a>.)</p>
+<p>
+</p>
+<div class="fluo_green_frame">
+<p>
+<strong>ATTENTION:</strong> The delete command in <em>Mailpile</em>'s Command Line Interface performs <strong>immediate and definitive deletion, with no permanence in the trash, which means:</strong>
+</p>
+<center>
+<span class="fluo_green_bgnd"><big><strong>NO UNDO</strong></big></span>
+</center>
+<center>
+However:
+</center>
+<p class="fluo_green_frame">
+If you are leaving your emails on the remote server, and permanently <strong>delete</strong> some of them <strong>only from the local storage</strong> and not on the remote server, <strong>they will be downloaded again</strong>.
+</p>
+<p>There's a suggestion below <a href="#insteadOfImmediateDeletion">here</a>.</p>
+</div>
+<p>
+</p>
+<div class="fluo_orange_frame">
+<p>The delete command seems to (correctly) only affect local storage. How I tested:</p>
+<ul>
+<li>Settings | Privacy | <strong><em>Allow deletion of e-mail from servers and mailboxes</em></strong>: I switched to On (otherwise deletion would appear to be &quot;prohibited&quot;)</li>
+<li>Email account settings | Incoming Mail | <strong><em>Leave mail on server</em></strong><br />
+I left the checkbox marked (here's again <a href="#IncomingMailSettings">how to reach the Incoming Mail settings</a>)</li>
+</ul>
+<p>It has been <a href="#https://github.com/mailpile/Mailpile/issues/945">suggested on GitHub</a> that there might be two separate settings:</p>
+<ul>
+<li><strong><em>Allow deletion of emails from servers</em></strong></li>
+<li><strong><em>Allow deletion of emails from local storage</em></strong></li>
+</ul>
+<p>I've tested deleting multiple times one message in the Inbox with the delete command, then watching it appear again as <em>Mailpile</em> was fetching it again from the remote server.</p>
+<strong>DO YOUR OWN TESTS WITH THE <em>MAILPILE</em> VERSION YOU'LL BE USING, AND POSSIBLY WAIT A FEW DAYS, BEFORE DEFINITELY ASSUMING THAT THIS IS THE BEHAVIOR.<br />
+Deletion of emails from remote servers as a consequence of immediate deletion from <em>local</em> storage with the delete command in the CLI <em>might</em> turn out to happen, but after a while. <span class="fluo_orange_bgnd">[needs clarification]</span></strong>
+</div>
+<p>
+</p>
+<div class="lightblue_frame">
+<p><a name="EnablingDeletion"></a></p>
+<h3 id="in-the-gui-enabling-deletion-of-emails">In the GUI: enabling deletion of emails</h3>
+<p><strong>First of all</strong> in the GUI: <strong><em>Settings</em> | <em>Privacy</em> | <em>Allow deletion of e-mail from servers and mailboxes</em> =&gt; On</strong><br />
+(Mailpile 1.0.0rc6)</p>
+<p><em>After</em> enabling deletion, in the trash I'm seeing a line above all emails saying:<br />
+<strong>&quot;Trash : Messages will be permanently deleted after <span class="fluo_green_bgnd">91 days</span>.&quot;</strong></p>
+<hr />
+<p><a name="SettingDaysInTrash"></a></p>
+<h3 id="in-the-gui-setting-the-number-of-days-in-the-trash-before-automatic-definitive-deletion-of-emails">In the GUI: setting the number of days in the trash before automatic definitive deletion of emails</h3>
+<p><strong>Here is how to set a <span class="fluo_green_bgnd">lower number of days of permanence in the trash</span> before complete deletion.</strong></span></p>
+<p>To edit the trash tag settings:</p>
+<ul>
+<li>click the trash icon in the sidebar</li>
+<li>click the &quot;Edit&quot; gear icon above on the left, just below the search engine input field</li>
+<li>click Automation to open that section of the settings</li>
+<li>select a lower number of days after which a messages is untagged and deleted<br />
+(91 days is the default value and the largest one that can be chosen)</li>
+</ul>
+</div>
+<p>You can also immediately empty the trash.</p>
+<p><a name="ImmediatelyEmptyingTrash"></a></p>
+<h3 id="immediately-emptying-the-trash-or-part-of-it-using-the-cli">Immediately emptying the trash (or part of it) using the CLI</h3>
+<p>Before executing a delete command, you must execute a <code>search</code> one (please check out one short thing <a href="#unwantedOutputFormatSwitch">above</a> if you've jumped here from the paragraph <strong><em>Sending emails to the trash</em></strong>).</p>
+<p><a name="immediatelyEmptyingTheTrash"></a>To immediately empty the trash, I can do:</p>
+<pre><code>search in:trash`  
+delete all</code></pre>
+<p>(That's super fast, <a href="#3-4minutesToDelete2500kEmails">unless</a> you are using <em>Mailpile</em> on an old computer, you have 46+k messages, you are deleting 2500+ of them at once and you have set <em>Mailpile</em> for full index encryption, in which case you might have to wait for a few minutes, 3-4 minutes here.)</p>
+<p>You may want to delete specific emails instead.</p>
+<pre><code>search in:trash</code></pre>
+<p>or</p>
+<pre><code>search your keywords</code></pre>
+<p>(the second one searches <em>out</em> of the trash, it won't find emails <em>in</em> the trash)</p>
+<p>In case of any matching emails, this gives you a numbered list. You can delete messages with specific numbers or ranges, e.g.</p>
+<pre><code>delete 3,10-15</code></pre>
+<p>If you have more emails in the trash or in any tag than the ones you can see at once in the CLI, then after each search:</p>
+<p><strong>Again:</strong></p>
+<p>You can modify <strong><em>Settings</em> | <em>Preferences</em> | <em>Search results per page</em></strong> to establish how many lines per page your search operations will give, I've set 40.</p>
+<p><code>n</code> next page<br />
+<code>p</code> previous page</p>
+<p class="fluo_green_frame">
+<strong>Again:</strong> if you are leaving your emails on the remote server, and permanently <strong>delete</strong> some of them <strong>only from the local storage</strong> and not on the remote server, <strong>they will be downloaded again</strong>.
+</p>
+<p><a name="TaggingUntaggingUsingTheCLI"></a></p>
+<h2 id="tagging-and-untagging-emails-using-the-cli">Tagging and untagging emails using the CLI</h2>
+<p><a name="MovingToTheTrashUsingTheCLI"></a></p>
+<h3 id="moving-emails-to-the-trash-using-the-cli">Moving emails to the trash using the CLI</h3>
+<p><a name="insteadOfImmediateDeletion"></a>If you do not have the time to remove them right away from the remote server first, then instead of deleting them immediately from the CLI, you could move them to the trash (or another tag you create specifically to remind you), which will give you some time to remove them from the remote server first when you are not too busy, and then delete them permanently from local storage. For instance (here I'll use the shorthand <code>s</code> for <code>search</code>):</p>
+<pre><code>s some words
+tag +trash 1-2,5-13</code></pre>
+<p>Suppose that you want to move to the trash all drafts.</p>
+<pre><code>s in:drafts
+tag +trash all</code></pre>
+<p><a name="MovingOutOfTheTrashUsingTheCLI"></a></p>
+<h3 id="moving-emails-out-of-the-trash-using-the-cli">Moving emails out of the trash using the CLI</h3>
+<p>But then you find out that you are actually going to need a few of those emails as drafts:</p>
+<pre><code>s in:trash
+tag -trash +drafts 97-103</code></pre>
+</div>
+<h2 id="section-60"><br></h2>
+<br> <a name="gpgExamples"></a> <big><span class="notEssent_gpg_bgnd_fg">This is not essential to use <em>Mailpile</em></span></big>
+<div class="notEssent_gpg_frame">
+<h1 id="appendix-a-few-examples-with-gnupg-on-the-command-line-not-essential-to-use-mailpile">Appendix: a few examples with <em>GnuPG</em> on the command line – not essential to use <em>Mailpile</em></h1>
+<div class="fluo_green_frame">
+<p>This appendix only contains a few examples, related to this document, of <em>GnuPG</em> usage on the command line <strong>in a <em>Linux</em> terminal window</strong> (I haven't seriously tested interacting with <em>gpg</em> from <em>Mailpile</em>'s CLI).<br />
+<strong>This is not exhaustive information on <em>GnuPG</em> usage. There are many good tutorials on the web, some of which specific on one aspect.</strong></p>
+</div>
+<p><a name="perfectKeypair"></a>Here's a nice tutorial about <strong>creating <em>GnuPG</em> keys</strong>, the one I follow more or less to create my own keys (air-gapped, with no picture and with a few other differences):<br />
+<a href="https://alexcabal.com/creating-the-perfect-gpg-keypair"><strong>Creating the perfect GPG keypair – Alex Cabal</strong></a><sup>[<a href="#fn41" id="fnref41">41</a>]</sup></p>
+<p>As the tutorial recommends, <strong>I keep the whole result with the primary key stored apart and actually export and use <em>the subkeys</em></strong>.</p>
+<p>Let's see examples related with other aspects.</p>
+<p class="fluo_green_frame">
+EACH ONE OF THE FOLLOWING COMMAND LINES HAS TO BE TERMINATED WITH THE &lt;ENTER&gt; KEY.
+</p>
+<p><a name="ListingPubKeys"></a></p>
+<h2 id="listing-the-public-keys-in-the-keyring">Listing the public keys in the keyring</h2>
+<pre><code>gpg -k</code></pre>
+<p>(lowercase k)</p>
+<p><a name="ListingSecretKeys"></a></p>
+<h2 id="listing-the-secret-keys-in-the-keyring">Listing the secret keys in the keyring</h2>
+<pre><code>gpg -K</code></pre>
+<p>(uppercase K)</p>
+<p><a name="ExportingPubKey"></a></p>
+<h2 id="exporting-a-public-key-from-the-keyring">Exporting a public key from the keyring</h2>
+<pre><code>gpg -a -o pubkey.asc --export myemail@addr.ess</code></pre>
+<p><a name="ExportingSecretsFromKeyring"></a></p>
+<h2 id="exporting-secret-keys-or-subkeys-from-the-keyring-not-if-held-in-a-hardware-device">Exporting secret keys or subkeys from the keyring (not if held in a hardware device)</h2>
+<p><strong>Evaluate <em>where</em> you are saving this file and consider <a href="#handlingSensitiveFiles">securely removing</a> it afterwards.</strong></p>
+<pre><code>gpg -a -o secretkeys.asc --export-secret-keys myemail@addr.ess&lt;enter&gt;</code></pre>
+<p>To only export secret sub keys without the primary key:</p>
+<pre><code>gpg -a -o secretsubkeys.asc --export-secret-subkeys myemail@addr.ess&lt;enter&gt;</code></pre>
+<p><a name="Importing"></a></p>
+<h2 id="importing-public-or-secret-keys-or-subkeys-or-a-revocation-certificate">Importing public or secret keys or subkeys or a revocation certificate</h2>
+<pre><code>gpg --import filename</code></pre>
+<p><a name="EncryptingSigning"></a></p>
+<h2 id="encrypting-signing">Encrypting, signing</h2>
+<p>You might do something like this, possibly in an <a href="#airGapped">air-gapped</a> machine (I switch to another e-mail address only to &quot;simulate&quot; the air-gapped scenario, that is to remind that I might be using another key with an invented e-mail address associated to it only to be able to easily select the key while using it):</p>
+<pre><code>gpg -o toX.tar.gpg -u me@airg.xxx -r x@airg.xxx -s -e toX.tar</code></pre>
+<p>me@airg.xxx would be an invented user id associated to this key you have created not to actually directly use with email, probably specifically for air-gapped use with X, and x@airg.xxx the user id for X's key, <em>GnuPG</em> won't bother because those email addresses do not exist, it's just keys IDs so we don't have to use hexadecimal ones. Actually the user ID also identifies all related subkeys, one subkey will be specifically used to sign, another one to encrypt (and optionally you can add a subkey to authenticate which can be used with SSH connections). See above the link to Alex Cabal's tutorial about keys creation.</p>
+<p>Instead of .tar it could be .zip or .txt or .rtf or whatever other extension, actually <strong>the name and extension of the input and output files are not relevant to <em>GnuPG</em>.</strong><br />
+You can attach the resulting binary file toX.tar.gpg to a <em>Mailpile</em> email which is going to be encrypted with yet another key.</p>
+<p>Or if you have a short message or any small file which you want to encrypt and copy&amp;paste into the email body (again, instead of .txt it could be .rtf or whatever):<br />
+gpg -a -o toX.txt.asc -u me@airg.xxx -r x@airg.xxx -s -e toX.txt</p>
+<p>You can still <em>attach</em> an ASCII file of course, but to that goal I'd go binary.</p>
+<p>The following four lines are not commands, they mention options.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">short option</th>
+<th align="left">long equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><code>-a</code></td>
+<td align="left"><code>--armor</code></td>
+</tr>
+<tr class="even">
+<td align="center"><code>-o</code></td>
+<td align="left"><code>--output</code></td>
+</tr>
+<tr class="odd">
+<td align="center"><code>-s</code></td>
+<td align="left"><code>--sign</code></td>
+</tr>
+<tr class="even">
+<td align="center"><code>-u</code></td>
+<td align="left"><code>--local-user</code></td>
+</tr>
+</tbody>
+</table>
+<p><span class="fluo_green_bgnd">Specifying a local user is only necessary if you have more than one secret key in the keyring and the one you want to use is not the default one</span> (which would normally be the first one you get with <code>gpg -K</code>).</p>
+<p>If you and your correspondent haven't yet exchanged a public key for air-gapped use, you might use <strong>symmetric encryption</strong>, the result will possibly be a smaller file, especially evident if you are encrypting a small file, but <strong>it won't be as strong as asymmetric encryption with a proper key</strong>.</p>
+<pre><code>gpg -a -o toX.txt.asc -c toX.txt</code></pre>
+<p>If at least <em>you</em> have previously passed to your correspondent your public key, you can sign (-s) even if you are using symmetric encryption:</p>
+<pre><code>gpg -a -o toX.txt.asc -u me@airg.xxx -s -c toX.txt</code></pre>
+<p><a name="Decrypting"></a></p>
+<h2 id="decrypting">Decrypting</h2>
+<pre><code>gpg -o toX.txt -d toX.txt.asc</code></pre>
+<p>If your correspondent has already imported your public key and you encrypted with the -s option to include your signature, <em>GnuPG</em> will tell your correspondent that there is a good signature from you.</p>
+<p><a name="DetachSig"></a></p>
+<h2 id="creating-a-detached-signature-and-verifying-one">Creating a detached signature and verifying one</h2>
+<p>If you want to add a separate signature of a file:<br />
+gpg -u me@airg.xxx --detach-sig myFile.abc</p>
+<p>The result will be a detached signature file named myFile.abc.sig</p>
+<p>Anybody having imported your public key and receiving that file will be able to verify your detached signature of that file, which certifies that the file hasn't been altered since you signed it:<br />
+gpg --verify myFile.abc.sig</p>
+<p>or:<br />
+gpg --verify myFile.abc.sig myFile.abc</p>
+<p><a name="TextSignatureAtTheBottom"></a></p>
+<h2 id="the-term-signature-is-possibly-confusing">The term &quot;signature&quot; is possibly confusing</h2>
+<p>The few lines of text that I want my email client to automatically put at the bottom of my emails are also called &quot;signature&quot;.<br />
+They have <em>nothing to do</em> with the actual digital signature of my email message, which proves:</p>
+<ul>
+<li>that I wrote the message</li>
+<li>that it hasn't been altered</li>
+</ul>
+<p><em>But</em> they might be used to also carry information about my PGP key for that account:</p>
+<ol style="list-style-type: decimal">
+<li>the primary key hexadecimal ID</li>
+<li>the fingerprint</li>
+</ol>
+<p>To obtain the fingerprint:</p>
+<pre><code>gpg -o myFingerprint.txt --fingerprint my.email@addr.ess</code></pre>
+<p>and you only use the line containing &quot;Key fingerprint = ...&quot; because that is what can and should be obtained by anybody only having imported your public key, after importing it, with the same <code>gpg --fingerprint my.email@addr.ess</code> command, <em>provided</em> that the key they have imported has not been altered.</p>
+<p><strong>If the fingerprint doesn't match, then the public key they have imported is not your uncorrupted/unaltered public key.</strong></p>
+<p><a name="TemporarilyAnotherKeyring"></a></p>
+<h2 id="temporarily-using-another-keyring">Temporarily using another keyring</h2>
+<pre><code>gpg --homedir relativePathToReplacementGnupgFolder --whatever-options-and-command</code></pre>
+<p>E.g.:</p>
+<pre><code>gpg --homedir /media/myuser/ENCR_FLASH/somepath/.gnupg_withMoreSecretKeys -K</code></pre>
+<p><a name="BeforeSigningKeys"></a></p>
+<h2 id="before-signing-somebody-elses-keys...">Before signing somebody else's keys...</h2>
+<p><span class="fluo_green_bgnd">Finally: many tutorials out there explain the meaning and the how-to of <strong>signing the keys of other persons</strong>.<br />
+Just remember to do so <strong><em>after</em> setting your trust level</strong> for those keys.</span></p>
+</div>
+<p><br></p>
+<hr />
+<hr />
+<hr />
+<p><a name="__footnotes__"></a></p>
+<h4 id="notes">NOTES</h4>
+<ol style="list-style-type: decimal">
+<li><a id="fn1"></a>The<a name="warningSlow"></a> search index itself can optionally be totally encrypted as well.
+<p class="fluo_green_frame">
+<strong>The <em>Security and Privacy Settings</em> page <a href="#stronglyEncryptIndex_slow">warns with the word &quot;slow&quot;</a> about this choice, and actually the default would be <em>partial</em> encryption of the index.</strong>
+</p>
+<p>I've chosen to cope with the additional time. Here's the lower right portion of the GUI with my second &quot;real&quot; <em>Mailpile</em> setup, which includes two <em>GMail</em> accounts with many years of emails (and spam, which I'm going to be able to move to the trash, or directly permanently delete, much faster in <em>Mailpile</em> than via webmail, while I've used webmail to delete all emails from <em>GMail</em> servers):</p>
+<p><a name="astonishingSearchEngine"></a><em>image 60b</em><br />
+<img src="pictures/mailpile__img_60b.jpg" alt="img 60b" /></p>
+<strong>Searches can actually take much less time than that</strong>, and a repeated search even goes down to 0.001 seconds.<br />
+
+<div class="fluo_green_frame">
+<p><strong>So, what might become slower with full search index encryption?</strong><br />
+(As far as I can speculate at the moment, of course. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span>)</p>
+<p>I'm <strong>not sure</strong> that what follows is actually related with the full encryption of the search index, <strong>but I suspect so</strong> because I don't see anything else slow.</p>
+<ul>
+<li><span class="fluo_green_bgnd"><strong>The first login</strong></span> after starting up <em>Mailpile</em>, with over 46k messages, <strong>now takes over 45 secs on this old computer</strong> (it would take considerably more on a <em>Raspberry</em> PI4).<br />
+It takes 2-3 seconds in my other non-<em>GMail</em> setup, which has less than 300 messages because the previous ones are all in <em>Thunderbird</em>.<br />
+You can not use <em>Mailpile</em> from the CLI or the GUI before having made at least one login after startup, which can be done in the GUI or in the CLI with the command: <code>login</code>&lt;enter&gt;
+<ul>
+<li>If you log in via the GUI, you'll also be able to use the CLI.</li>
+<li>If you log in via the CLI you'll have to type your passphrase again in the GUI in order to be able to use it, hence you may want to login directly in the GUI (unless you are staying with the console alone).</li>
+</ul></li>
+<li><p>After logging out from the GUI without shutting down <em>Mailpile</em>, logging back in is &quot;instantaneous&quot; after typing your passphrase, as is logout.<br />
+<span class="fluo_green_bgnd"><strong>Shutdown</strong>,</span> on the other hand, occasionally took up to 2-3 minutes on this old computer, even on my non-<em>Gmail</em> setup with less than 300 emails, so don't plan on shutting down and leave home in a hurry, do it with some anticipation.</p>
+<p>In the CLI, part of the answer to the <code>help</code> command is:</p>
+<pre><code>cleanup                       Perform cleanup actions (runs before shutdown)</code></pre>
+<p>I guess that's the reason why shutdown can take some time (possibly a bit more because I've opted for a strong encryption of the search index).</p></li>
+<li><a name="3-4minutesToDelete2500kEmails"></a>It took 3-4 minutes on this old computer to <span class="fluo_green_bgnd"><strong>permanently delete at once many</strong> (2500+) <strong>conversations from the Trash</strong></span>, in my <em>Gmail</em> setup which had more than 46k emails (done <a href="#immediatelyEmptyingTheTrash">with the CLI</a> of course).
+</div>
+ <a href="#fnref1">↩</a>
+<p>
+</p></li>
+</ul></li>
+<li><a id="fn2"></a>&quot;Signatures&quot; is the common denomination for a few lines of text that you might want to automatically be added at the bottom of your emails (of course it's not about digitally signing emails). <a href="#fnref2">↩</a>
+<p>
+</p></li>
+<li><a id="fn3"></a><a name="Video2013"></a>Video: <a href="https://www.youtube.com/watch?v=v_hCmxTH9ag"><strong>Bjarni Einarsson: Mailpile</strong></a><br />
+From this video, I'd also say that the design philosophy was not that of a &quot;touch and go&quot; e-mail client, but more a process running all day long, keeping things synced, while the user would login in the GUI once in a while. I'm rather using it &quot;touch and go&quot;, taking into account that startup and shutdown can take a few seconds to a few minutes. <a href="#fnref3">↩</a>
+<p>
+</p></li>
+<li><a id="fn4"></a>How<a name="IncomingMailSettings"></a> to reach the &quot;Incoming Mail&quot; settings:
+<ul>
+<li>click on the Inbox tag in the sidebar</li>
+<li>in the upper left corner of the GUI click the envelopes icon</li>
+<li>specifically for the Incoming Mail settings, click the &quot;ethernet + arrow down&quot; icon<sup>[<a href="#fn5" id="fnref5">5</a>]</sup> for the account which &quot;Incoming Mail&quot; settings you want to modify (right below the small gear icon labeled <strong><em>Settings</em></strong>).</li>
+</ul>
+Some of the settings in this section are:
+<ul>
+<li><strong><em>Forget password</em></strong></li>
+<li><strong><em>Leave mail on server</em></strong></li>
+<li><strong><em>Copy all mail and add to search engine</em></strong><br />
+<span class="fluo_orange_bgnd">I haven't tested what happens disabling this one when creating the account, possibly new incoming mails are fetched and not pre-existent ones, but I'm just wondering, I'll have to try <strong>[needs clarification]</strong></span></li>
+<li><strong><em>Enable this mail source</em></strong> <a href="#fnref4">↩</a>
+<p>
+</p></li>
+</ul></li>
+<li><a id="fn5"></a><strong>The color of the &quot;ethernet + arrow down&quot; icon changes</strong>, green if the last connection to the incoming mail server succeeded, red if not, and <span class="fluo_orange_bgnd">possibly gray – apparently not always – if <em>Mailpile</em> has been offline during <em>some</em> time and is now simply trying to connect to the incoming mail server each <em>n</em> seconds (300 seconds the default interval). <strong>[needs clarification]</strong></span><br />
+By <strong>hovering</strong> the mouse cursor on the icon, a hint-formatted message appears telling what the <strong>situation</strong> is. <a href="#fnref5">↩</a>
+<p>
+</p></li>
+<li><a id="fn6"></a>Open the <a href="#IncomingMailSettings">Incoming Mail settings</a> and mark the checkbox labeled <strong><em>Add New</em></strong>, a new section will appear immediately, start by the dropdown menu where you initially read &quot;None&quot;, there you choose the connection protocol and immediately more input fields will appear. You can copy the same settings as the first source if the symptoms where simply anomalous, or you can type in alternative settings if you got them from the account provider or the related support forum. Before saving, remember to <em>disable</em> the previous source by &quot;unmarking&quot; the <strong><em>Enable this mail source</em></strong> checkbox <a href="#fnref6">↩</a>
+<p>
+</p></li>
+<li><a id="fn7"></a>I'd look into it (I did <em>very</em> little coding in python in the past but it doesn't seem more difficult than other languages I've worked with... <em>Mailpile</em>, though, is probably a rather complex project requiring some time to dig into it). But I have stormy weather incoming, meaning that I must relocate and outgoing money is going to be multipled by <em>n</em>, which means I'll have less time to work for free. Before, I hope to be able to finish prioritaire <em>ad honorem</em> ongoing works (actually, I've given priority to this tutorial despite a friend's recommendations). <a href="#fnref7">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn8"></a>These options appear in a small frame with an eye icon, on the left in the message body area. You can see that frame in the lower left fourth of <a href="#imageWithEyeIconFrame_A">this image</a> and <a href="#imageWithEyeIconFrame_B">the one which follows it</a>:</p>
+<blockquote>
+<p>This message references images or other content from the web. Downloading and displaying these images may notify the sender that you have read the mail.</p>
+Okay, display the images<br />
+Always display images from this sender<br />
+No, thanks! <a href="#fnref8">↩</a>
+<p>
+</p>
+</blockquote></li>
+<li><a id="fn9"></a>Without having to configure a smaller value for the &quot;interval&quot; setting. <a href="#fnref9">↩</a>
+<p>
+</p></li>
+<li><a id="fn10"></a>The default setting is keepalive activated. Apparently, after a certain amount of time offline, <em>Mailpile</em> switches to another mode, just trying once each <em>n</em> seconds, being 300 apparently that value.<br />
+Disabling keepalive and setting an interval of 300 seconds between connections is mentioned in an <a href="https://github.com/mailpile/Mailpile/issues/2272">issue</a> report <a href="#newEmailNotAppearing">mentioned above</a>, which links <a href="https://community.mailpile.is/t/hints-for-developers/562"><strong>this page</strong></a> explaining <strong>how to see all settings and how to modify those settings via the <span class="fluo_green_bgnd"><fixed>set</fixed></span> command</strong>.<br />
+<strong>You can use the <span class="fluo_green_bgnd"><fixed>unset</fixed></span> command, identifying settings the same way, to restore default values.</strong><br />
+By default, interval = 300 appears to be commented out. I guess it's still a default behavior in case keepalive has not been possible for a while. <strong>After having been offline for hours, I'd expect the 300 seconds to have elapsed.</strong> Maybe what's not easily detectable in a way that would be portable to different platforms is that the computer is back online without actually trying to connect, in lack of which possibility the philosophy might have been to stop trying on and on. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span> <a href="#fnref10">↩</a>
+<p>
+</p></li>
+<li><a id="fn11"></a>You'll think &quot;if your keystrokes are being recorded, your <em>Mailpile</em> passphrase is compromised as well&quot;. Well, I've come up with a method to raise the bar just a bit, but <em>publishing</em> the trick wouldn't be the best security policy. Not knowing if my keystrokes had been watched before I came up with it, I've changed the <em>Mailpile</em> password afterwards.<br />
+Absolutely secure now? Of course not, I'm simply progressively learning good practices to <em>raise the sophistication level</em> that an attacker should have to succeed. <a href="#fnref11">↩</a>
+<p>
+</p></li>
+<li><a id="fn12"></a>As you can see in the <a href="#Video2013">already mentioned</a> 2013 Video <a href="https://www.youtube.com/watch?v=v_hCmxTH9ag"><strong>Bjarni Einarsson: Mailpile</strong></a>. <a href="#fnref12">↩</a>
+<p>
+</p></li>
+<li><a id="fn13"></a>Yes, I've read rumors about Debian (hence derivatives like <em>Ubuntu</em>) having been infiltrated by the NSA. I've been considering moving to another distro with no specially made kernels (and no plans about making auto-update, <i>update-at-any-moment-without-asking</i>, a characteristic of the next major release, although I admit that I haven't been following the matter since reading a <a href="https://www.reddit.com/r/linux/comments/gc7p1t/ubuntu_2004_lts_snap_obsession_has_snapped_me_off/?sort=new">very long <em>Reddit</em> thread</a> with plenty of users preliminarily complaining about that), they might have decided to add an auto-update ON/OFF switch.<br />
+<strong>Which <em>Linux</em> distributions would be more secure and still allow to easily run plenty of software available over the Internet?</strong> <a href="#fnref13">↩</a>
+<p>
+</p></li>
+<li><a id="fn14"></a>There is a second package, to have <em>Mailpile</em> act as a server for connections from other machines. I've only installed the first package for now. If you want to also test the second one, be sure to read the developers' warnings about security still needing to be checked out and possibly improved. (If you don't need a &quot;real&quot; Apache style server, I think there shouldn't be any problems setting an SSH tunnel from another machine and running the web browser on it, not even X forwarding should be necessary, and on the other machine the port number might be a different one.) <a href="#fnref14">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn15"></a><a name="MailpileFolderDefaultLocation"></a>You can simply keep different <em>Mailpile</em> folders to have various completely separate setups that you will use one at a time. In <em>Linux</em> you don't even have to rename or move the folders, which could become confusing. You can create a symbolic link to the folder you want to use, making it accessible as <code>~/.local/share/Mailpile/</code><br />
+You can put the commands to switch among your setups in one or more bash scripts, which would preventively test <code>pgrep mailpile</code> and exit with an error message if you are trying to switch while <em>Mailpile</em> is running. For instance:</p>
+<pre><code>procName=mailpile
+
+procID=`pgrep -x &quot;$procName&quot;
+if [ &quot;$procID&quot; != &quot;&quot; ]
+then
+    echo &quot;&quot;
+    1&gt;&amp;2 echo &quot;***** $procName process running (PID $procID) - NOT switching *****&quot;
+else
+    ...</code></pre>
+and it deletes your symbolic link and creates another. My own script also checks what the situation is, folders and link found or not found, before doing anything, just in case there were any unexpected problems left previously. <a href="#fnref15">↩</a>
+<p>
+</p></li>
+<li><a id="fn16"></a>This behavior can be modified in the settings. <a href="#separateFirefoxInstance">You might prefer</a> to open you browser by yourself, or use a previously open instance of it. <a href="#fnref16">↩</a>
+<p>
+</p></li>
+<li><a id="fn17"></a>The above mentioned video <a href="https://www.youtube.com/watch?v=v_hCmxTH9ag"><strong>Bjarni Einarsson: Mailpile</strong></a>, starting at 18 minutes, demonstrates that this console offers a tremendous power for advanced users, even a python shell if you enable it with the following steps:
+<ol style="list-style-type: lower-alpha">
+<li>Settings (gear icon in the upper right corner) | Preferences | &quot;Enable developer-only features&quot; =&gt; On and click <strong><em>Save Settings</em></strong></li>
+<li>Settings again | Plugins, click on the new button you should now see, labeled <strong>&lt;&gt; <em>Enable: hacks</em></strong></li>
+<li>Now you can access the python Command Line Interface, by typing this command in <em>Mailpile</em>'s CLI:<br />
+<code>hacks/pycli</code><enter></li>
+</ol>
+Notice that the setting mentioned in the first step, Enable developer-only features, is in the <strong><em>Danger Zone</em></strong>. That's because you can do a mess if you don't know what you're doing, or you do know but make a mistake. <a href="#fnref17">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn18"></a>This command shows scheduled jobs:<br />
+<code>cron</code>&lt;enter&gt;<br />
+Here's the result I'm getting (notice the line starting by &quot;sendmail&quot;):</p>
+<pre><code>Elapsed: 0.001s (cron: Displayed CRON schedule)
+
+Background CRON last ran at 2020-10-26 22:30.
+Current schedule:
+
+ JOB                     INTERVAL LAST RUN         NEXT RUN         STATUS
+ retrain_autotag            86400                  2020-10-27 05:03 new
+ save_search_history          900 2020-10-26 22:26 2020-10-26 22:41 ok
+ gpl_optimize                  30 2020-10-26 22:30 2020-10-26 22:30 ok
+ rescan                       900 2020-10-26 22:24 2020-10-26 22:39 ok
+ sendmail                      90 2020-10-26 22:29 2020-10-26 22:30 ok
+ refresh_command_cache          5 2020-10-26 22:30 2020-10-26 22:30 ok
+ save_metadata_index          900 2020-10-26 22:25 2020-10-26 22:40 ok
+ tag_automation             28800                  2020-10-27 01:39 new
+ motd                        3600 2020-10-26 22:29 2020-10-26 23:29 ok</code></pre></li>
+</ol>
+As far as I can tell, when you explicitly use the <code>sendmail</code> command in the CLI, you get <code>True</code> as the result when there are no new emails to send. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span><br />
+On the other hand, you may get some error messages if sendmail is already running. <a href="#fnref18">↩</a>
+<p>
+</p>
+<ol start="19" style="list-style-type: decimal">
+<li><a id="fn19"></a>Our &quot;normal&quot; everyday emails should all be encrypted. For years, I've been seeing blogs on the web recommending to encrypt every email, even &quot;let's go for a picnic&quot;. It took me <em>some</em> time to understand <em>why</em>, being &quot;I've nothing to hide&quot; the first thought we all have. One of various good reasons is to help journalists who <em>need</em> to protect their sources. Epistolary secrecy, right to privacy, is a fundamental ingredient of any democracy.<br />
+<strong><em>Aleksandr Solzhenitsyn</em></strong>, despite being a brave officer, went through various years in a <em>gulag</em> because he <em>privately</em> wrote to a friend criticizing how Stalin was leading war.<br />
+Today, NWO-controlled governments are apparently trying to push in the same direction, as per Trilateral Commission statements about correcting an &quot;excess of democracy&quot;... <a href="#fnref19">↩</a>
+<p>
+</p></li>
+<li><a id="fn20"></a><em>Mailpile</em> will show you the passphrases for the keys it is managing for you, in exchange for your <em>Mailpile</em> login password:
+<ul>
+<li>move away or phisically cover all webcams and smartphones cameras around</li>
+<li>if you don't see an icon with colored envelopes in the upper left corner of the GUI, click the <strong><em>Inbox</em></strong> tag in the sidebar</li>
+<li>click the envelopes icon in the upper left corner, you are now accessing a page with your accounts settings</li>
+<li>click <strong>the small lock icon of the account of which you want to see the keys passphrase</strong></li>
+<li>type in your <em>Mailpile</em> login password</li>
+</ul>
+and you'll see the passphrase that <em>Mailpile</em> uses to unlock that account secret keys.<br />
+If <em>Mailpile</em> is using the <em>GnuPG</em> keyring, you'll be able to export using <em>gpg</em> on the Linux command line (or the Windows cmd window, I guess). The <a href="#gpgExamples">section</a> about <em>GnuPG</em> <a href="#ExportingSecretsFromKeyring">mentions exporting secrets from the keyring</a>, but there are also many good tutorials on the web. <a href="#fnref20">↩</a>
+<p>
+</p></li>
+<li><a id="fn21"></a><em>Mailpile</em> developers already have a draft for an evolution of SMTP, just <em>great</em>. <a href="#fnref21">↩</a>
+<p>
+</p></li>
+<li><a id="fn22"></a>Was this one? I know it wasn't, but how would you know? LOL this reminds me of certain spy movies where nobody can trust anybody. <a href="#fnref22">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn23"></a>I went to <a href="https://keyserver.escomposlinux.org/">one of many</a> key servers out there and as search string I typed Glenn Greenwald.<br />
+Each one of this servers may not always be up and working correctly. If you get errors like &quot;Bad Gateway&quot; when clicking on a key ID to actually get the key, you may want to wait a few seconds and retry. If you have the hexadecimal key ID, it is also possible to import directly into gpg, for instance in this case:</p>
+<pre><code>gpg --keyserver keyserver.escomposlinux.org --receive-keys 0xA4A928C769CD6E44</code></pre>
+(Of course you would replace the server URL and key ID.) <a href="#fnref23">↩</a>
+<p>
+</p></li>
+<li><a id="fn24"></a>I've read that at first Greenwald was deeming as too complex the security procedures that Snowden was asking from him. He was later convinced by Laura Poitras, the author of the documentary <strong><em>Citizenfour</em></strong> (2014). <a href="#fnref24">↩</a>
+<p>
+</p></li>
+<li><a id="fn25"></a>Months ago I would have added: &quot;... and because by default <em>GnuPG</em> on <em>Tails</em> adds to the randomness more entropy created from keyboard and mouse events&quot;. But I have recently created keys on <em>Ubuntu</em> (ver. 18.04.5 with <em>GnuPG</em> ver 2.2.4 and libgcrypt 1.8.1) to simply check the syntax of a few commands I've added to the <a href="#gpgExamples"><em>gpg</em> appendix</a>, and it's quite possible that the random generator was <em>waiting</em> for such events while giving out small chunks of the output sequence of the required size. <a href="#fnref25">↩</a>
+<p>
+</p></li>
+<li><a id="fn26"></a>It can actually be an alphanumeric passphrase up to 127 characters long, if the information I recollected is correct. <a href="#fnref26">↩</a>
+<p>
+</p></li>
+<li><a id="fn27"></a>As far as I can tell (I haven't dug): you are asked the PIN each time you use another subkey, or if many hours – possibly configurable – have elapsed since the last time you used that subkey (I don't know if keeping using it would extend the grace period indefinitely). For instance, if you have typed in the device PIN to <em>sign</em> something, you have only unlocked the use of the signing subkey. If right afterwards you want to use another subkey, e.g. to decrypt, you'll be asked the PIN again. After having enabled each function, the device can stay ON for quite a few hours – if you wish so – and later perform more such operations only requiring your touch on the sensor button. <a href="#fnref27">↩</a>
+<p>
+</p></li>
+<li><a id="fn28"></a>With up to three subkeys, which means that it could also be used to authenticate in SSH connections, but as I just said, it can only hold one PGP credential (it can hold up to 25 credentials or infinite number of credentials of other standards of which I'll use zero to three credentials at most). <a href="#fnref28">↩</a>
+<p>
+</p></li>
+<li><a id="fn29"></a>It contains a microcontroller who is supposed to do all operations. I want to believe that these devices are so highly audited and kept under observation worldwide that putting a backdoor into them would be highly risky for who did it, legally and not, and for a whole lot of countries by now. <em>Yubico</em> however, if I've read correct information, admitted some kind of vulnerability of a &quot;FIPS&quot; series which was actually supposed to have some stronger US Federal certification, and retired the vulnerable model replacing it for customers. <a href="#fnref29">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn30"></a>It is good practice to check sensitive software you download with the developers' signatures.<br />
+In this document you have <a href="#gpgExamples">an appendix with examples of <em>GnuPG</em> usage</a> on a <em>Linux</em> terminal command line, also showing <a href="#DetachSig">how to create and verify detached signatures</a>.</p>
+As it has <a href="https://github.com/Yubico/yubikey-manager-qt/issues/248">already been reported</a>, <strong>in case any piece of software coming from <em>Yubico</em> has been signed with a key which hexadecimal ID you don't find on their <a href="https://developers.yubico.com/Software_Projects/Software_Signing.html">Software Signing page</a></strong>, you can search for that ID here <a href="https://keys.openpgp.org/"><strong>https://keys.openpgp.org/</strong></a> where you should find a primary key ID and a name. Then, you check that the name and key ID are actually listed on their <a href="https://developers.yubico.com/Software_Projects/Software_Signing.html"><strong>Software Signing page</strong></a>. (Maybe <em>Yubico</em> staff will improve this aspect of their website as suggested in that GitHub issue and you won't have to lose extra time when verifying any of their signatures.) <a href="#fnref30">↩</a>
+<p>
+</p></li>
+<li><a id="fn31"></a>Actually, <strong>if you forget</strong> to switch on the HUB slot before trying to use the <em>Yubikey</em>, you are normally simply invited to plug in the device. So far (about 40 days of everyday usage), only twice I went into a bit of a trouble and kept getting errors from <em>GnuPG</em> after switching the slot on.<br />
+<strong>In case</strong>, try unplugging the HUB from your PC and plugging it in again (<em>or</em> plugging the <em>Yubikey</em> into a non-HUB USB port, using it once, then back to the HUB, but I think the first one is the way to go, at least on this <em>Linux</em> PC). <a href="#fnref31">↩</a>
+<p>
+</p></li>
+<li><a id="fn32"></a><strong>If you forget to make secret keys available before opening an encrypted message</strong>, <em>Mailpile</em> might later remember that it had no suitable secret keys to decrypt it, despite the fact that afterwards you might have made those keys available and sometimes even despite having shut down down and restarted <em>Mailpile</em>. In case, <strong>try moving that message to another tag (and back if you need)</strong>. Once, so far, that has not worked here.<br />
+(Opening the Security settings of that account and pressing the <strong><em>Save</em></strong> button – after checking that the correct key was appearing – didn't solve it either.)<br />
+But <strong>I was able to decrypt that email again – and see it &quot;green&quot; again – minutes later after sending another email using the same secret keys</strong>. <a href="#fnref32">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn33"></a>I <a name="neverTooParanoid"></a>find it interesting to analyze and progressively adopt better habits (keeping in mind that our devices and OS'es are so insecure), as if I were handling something worth anybody's efforts to steal or alter, like industrial or military secrets, or the communications of a congressman or minister.<br />
+The more I know, the more I'm convinced that <strong>you're never too paranoid</strong>.</p>
+<p>Just consider:</p>
+<ul>
+<li><p><strong>Kleptography</strong>, developed <a href="#Kleptography_NSA">above</a>, while here we can elaborate on:</p></li>
+<li><p><strong>Radio <a name="BeamAndCoating"></a>communications.</strong> Here are a few lines from &quot;The Perfect Weapon (2020)&quot; (in my opinion an interesting piece of Russophobic Chinophobic Iranophobic propaganda, possibly manufactured by the Deep State / NWO powerful media producing facilities, with a limited hangout when it recognizes &quot;<u><em>we</em></u> started the cyber war&quot;):</p>
+<p>At about 3min44s, telling about the StuxNet computer virus:</p>
+<blockquote>
+<p>John Hultquist: the plan was a piece of malaware would be delivered into the industrial control systems running the Iranian nuclear program.</p>
+<p>Michael Riley: this network was <span class="fluo_green_bgnd">air gapped</span>. In other words, it's not connected to the internet. So you had to have ways in which the code could jump onto those computers.</p>
+<p>Sanger: there's still some mystery about exactly how this code made it from the nsa and the israeli cyber unit into the natanz plant.<br />
+There are many ways, including slipping in a usb key.<br />
+But we also now know that <span class="fluo_green_bgnd">the NSA had designed a brilliant small system, about the size of a briefcase, that could work from six or seven miles away, beaming computer code into a computer that had been set up with a receiver chip.<br />
+And that device could be used not only to put code in, but later to replace it and update it.</span></p>
+<p>Hultquist: once they got in, the code started unlocking itself, and it started two major tasks.<br />
+The first one was to record everything that the operator would be saying, and essentially, put that on a loop.<br />
+So that every day, when the operator came in to work, everything would look just fine.<br />
+It's sort of like a classic heist movie where the surveillance video is run on a loop, and the guard never knows what's actually going on. While at the same time, somebody's breaking in and stealing something.<br />
+The iranians were thinking the whole time that they're making progress, that they're moving towards their goal, when in fact, these systems are deadlined.<br />
+Because the second task for the code was to take the centrifuges and break them.</p>
+</blockquote>
+<p>At about 1h15m50s, telling how they analyzed photos found hacking a chinese PC:</p>
+<blockquote>
+<p>There was a picture of this big white building behind him, that had huge antennae dishes, had <span class="fluo_green_bgnd">reflective coating on the windows, that would prevent signal interception</span>.</p>
+</blockquote></li>
+</ul>
+As for the question &quot;am I being too paranoid?&quot;, apart from radio waves, I had already mentioned a <a href="#hackersVisit_symptomA">blocked <em>Yubikey</em> PIN</a> and a <a href="#hackersVisit_symptomB">firejailed <em>Firefox</em> instance engaging a USB flash drive</a>. <a href="#fnref33">↩</a>
+<p>
+</p></li>
+<li><a id="fn34"></a>Apparently, the hardware of USB ports is too flexibly reprogrammable, it can be used to steal information (maybe it's more difficult with <em>encrypted</em> USB volumes). Such attacks go under the common denomination of &quot;bad-USB exploit&quot;. <a href="#fnref34">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn35"></a>Actually, when first adding the <em>GMail</em> account into <em>Mailpile</em>, I also wanted to test disabling since the beginning <strong>&quot;Copy all mail and add to search engine&quot;</strong> in the <a href="#IncomingMailSettings">Incoming Mail settings</a>.</p>
+<p>What happened? I could send emails through <em>GMail</em> SMTP server, but <em>Mailpile</em> wasn't fetching any, not even if I sent new emails to that account.</p>
+Immediately after enabling <strong>&quot;Copy all mail and add to search engine&quot;</strong>, the (large) structure of my remote folders in that account appeared and <em>Mailpile</em> was fetching emails. <a href="#fnref35">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn36"></a>Actually I <em>do</em> have those keys, but not in the <em>gpg</em> keyring I'm using at the moment: I sent those emails to myself earlier today with my previous <em>Mailpile</em>+<em>gpg</em> setup. For this tutorial, I wanted to restart from scratch, so before launching <em>Mailpile</em> from the terminal window I did what follows:</p>
+<pre><code>mv -i ~/.local/share/Mailpile ~/.local/share/Mailpile_renamedToRestartFromScratchForTheTutorial  
+mv -i ~/.gnupg ~/.gnupg_b4_tutorial  
+install -d -m 700 ~/.gnupg  
+gpg -k</code></pre>
+<p><strong>You don't need to do this now</strong>, I'm just detailing this possibility of easily switching to/from another entire <em>Mailpile</em> setup (without having to switch to another user on your computer) because it might be useful to you.</p>
+<p>I guess <em>Windows</em> users should also be able to rename the corresponding folders.</p>
+I'll restore my real <em>Mailpile</em>/<em>GnuPG</em> setup later. <a href="#fnref36">↩</a>
+<p>
+</p></li>
+<li><a id="fn37"></a>I don't know if it's possible to add icons without having to modify parts of <em>Mailpile</em>. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span> <a href="#fnref37">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn38"></a>How did I learn that?</p>
+<p>By clicking a &quot;learn&quot; link about that when <em>Mailpile</em> kindly offered it to me in the notifications box:</p>
+<blockquote>
+<p>Mailpile lets you organize your mailbox the way you want it to be.<br />
+You can start customizing your experince by rearranging the sidebar on the left.</p>
+<ul>
+<li>In the bottom left, click: <strong><em>Organize</em></strong>.</li>
+<li>From here you can click and drag any of the tags (Inbox, Outbox, etc.) up or down to change its order in the sidebar.</li>
+<li>To customize each tag individually, click on one of the gears next to any tag.
+<ul>
+<li>Under Tag Settings you can change the name and color of a tag as well as where it's located and if you want it in your searches.</li>
+<li>Under Technical Settings you can make sub-tags so that they're more organized. For example:</li>
+<li>Receipts
+<ul>
+<li>Bills</li>
+<li>Groceries</li>
+<li>Personal</li>
+<li>Work</li>
+</ul></li>
+</ul></li>
+</ul>
+Stay tuned for more helpful hints to guide you in customizing your Mailpile! <a href="#fnref38">↩</a>
+<p>
+</p>
+</blockquote></li>
+<li><a id="fn39"></a>Off topic: <code>ls -l Mailpile*</code> would have been a more strictly appropriate command, since the <code>-a</code> option is only needed to also list files which names starts by a dot, otherwise &quot;invisible&quot; (apparently, I've made a habit of checking them out as well). <code>-l</code> shows the file size (and permissions). <a href="#fnref39">↩</a>
+<p>
+</p></li>
+<li><p><a id="fn40"></a>Here is how I restored my previous ~/.local/share/Mailpile folder and my previous ~/.gnupg folder.</p>
+<pre><code>mv -i ~/.local/share/Mailpile ~/.local/share/Mailpile_createdOnlyForTheTutorialWillDeleteSoon  
+mv -i ~/.local/share/Mailpile_renamedToRestartFromScratchForTheTutorial ~/.local/share/Mailpile  
+mv -i ~/.gnupg ~/.gnupg_onlyForTheTutorialWillDeleteSoon  
+mv -i ~/.gnupg_b4_tutorial ~/.gnupg</code></pre>
+<strong>You don't need to do this now</strong>, I'm just detailing this possibility of easily switching to/from another entire Mailpile setup (without having to switch to another user on your computer) because it might be useful to you. <a href="#fnref40">↩</a>
+<p>
+</p></li>
+<li><a id="fn41"></a>Yes <em>do</em> I realize that the familiy name of the author is not the most reassuring part of the tutorial LOL, in this context it looks like a nickname of somebody playing mind games with his readers.<br />
+And you have probably already read about certain perplexities, <a href="#ImayChoseRSA4096despite">here</a> and <a href="#Kleptography_NSA">here</a>, which for now I've chosen to resolve opting for RSA4096 while awaiting for practical applications of upcoming results of research on post-quantum cryptography. <a href="#fnref41">↩</a>
+<p>
+</p></li>
+</ol>
+
+
+
+<br><br><br><br><br><br><br><br><center><small>trailing empty lines to allow your browser to position with the last footnotes at the top of your screen</small></center>
+<br><br><br><br><br><br><br><br><center><small>trailing empty lines to allow your browser to position with the last footnotes at the top of your screen</small></center>
+<br><br><br><br><br><br><br><br><center><small>trailing empty lines to allow your browser to position with the last footnotes at the top of your screen</small></center>
+<br><br><br><br><br><br><br><br><center><small>trailing empty lines to allow your browser to position with the last footnotes at the top of your screen</small></center>
+<br><br><br><br><br><br><br><br><center><small>trailing empty lines to allow your browser to position with the last footnotes at the top of your screen</small></center>
+

@@ -1,0 +1,100 @@
+<!-- ACTUALLY NECESSARY STYLE STARTS HERE --->
+
+<style>
+img {
+ border: 2px solid #777;
+}
+
+.fluo_green_bgnd {
+ background-color:#b5ff91;
+ color:black;
+}
+
+.fluo_green_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#b5ff91;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.1em;
+ padding-bottom:0.1em;
+}
+
+.fluo_orange_bgnd {
+ background-color:#ffce91;
+ color:black;
+}
+
+.fluo_orange_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#ffce91;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.lightblue_frame {
+ border-style:solid;
+ border-width:8px;
+ border-color:#74a5cc;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_security_bgnd_fg {
+ background-color:#8396cf;
+ color:white;
+}
+
+.notEssent_security_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#8396cf;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_CLI_bgnd_fg {
+ background-color:#cf8384;
+ color:white;
+}
+
+.notEssent_CLI_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#cf8384;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+.notEssent_gpg_bgnd_fg {
+ background-color:#accf83;
+ color:white;
+}
+
+.notEssent_gpg_frame {
+ border-style:dotted;
+ border-width:8px;
+ border-color:#accf83;
+ padding-left:1em;
+ padding-right:1em;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+}
+
+/* unused ATM */
+.text2uppercase {
+ text-transform:uppercase;
+}
+
+</style>
+
+<!-- ACTUAL CONTENT STARTS HERE --->
