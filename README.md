@@ -1,7 +1,7 @@
 # Mailpile tutorial
 *Mailpile* post-installation tutorial
 
-Relative link to the tutorial in html format: [docs/Mailpile_tutorial.html](docs/index.html)
+Relative link to the tutorial in html format: [docs/index.html](docs/index.html)
 
 ## Requirements to build:
 
