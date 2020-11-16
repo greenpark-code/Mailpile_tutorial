@@ -2,6 +2,7 @@
 *Mailpile* post-installation tutorial
 
 **URL to the tutorial deployed online: [https://greenpark-code.github.io/Mailpile_tutorial/](https://greenpark-code.github.io/Mailpile_tutorial/)**
+
 Relative link to the tutorial in html format: [docs/index.html](docs/index.html)
 
 ## Requirements to build:
