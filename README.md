@@ -2,7 +2,7 @@
 *Mailpile* post-installation tutorial
 
 - **URL of the tutorial deployed online: [https://greenpark-code.github.io/Mailpile_tutorial/](https://greenpark-code.github.io/Mailpile_tutorial/)**
-- Relative link to the tutorial in html format: [docs/index.html](docs/index.html)
+- Relative path to the tutorial in html format: [docs/index.html](docs/index.html)
 
 ## Requirements to build:
 
@@ -10,7 +10,7 @@
 - **bash** (version 4.4.20(1) here at the moment).
 - **pandoc** (ver. 1.19.2.4 here at the moment)
 - **md_footnotes.pl** already included in this repository (ver. 1.1 here at the moment, please notice that there's no real options handling).  
-  It's a Perl pre-processor that I've made quickly to handle footnotes the way I like, with the resulting html syntax similar to pandoc's one (while I was on it, I made it so it **allows nested footnotes**, after reading [here](https://github.com/jgm/pandoc/issues/2053)).  
+  It is a Perl pre-processor that I have quickly made up to handle footnotes the way I like, with the resulting html syntax similar to pandoc's one (while I was on it, I made it so it **allows nested footnotes**, after reading [here](https://github.com/jgm/pandoc/issues/2053)).  
   I have been keeping it in a folder included in my PATH, but for this repository **I'm copying it directly into the src/ subfolder** (I might later create a code snipset or a repository)
 
 ## How to build the html file
