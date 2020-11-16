@@ -14,8 +14,8 @@ Relative link to the tutorial in html format: [docs/index.html](docs/index.html)
 
 ## How to build the html file
 
-cd src
-./build.sh
+    cd src
+    ./build.sh
 
 ## Acknowledgments
 
