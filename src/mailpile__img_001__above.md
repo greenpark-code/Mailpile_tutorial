@@ -71,7 +71,9 @@ I've been using *Thunderbird*+*Enigmail* during years by now, but *Mailpile* has
         
         I guess that's the reason why shutdown can take some time (possibly a bit more because I've opted for a strong encryption of the search index).
       
-    + <a name="3-4minutesToDelete2500kEmails"></a>It took 3-4 minutes on this old computer to <span class="fluo_green_bgnd">**permanently delete at once many** (2500+) **conversations from the Trash**</span>, in my *Gmail* setup which had more than 46k emails (done [with the CLI](#immediatelyEmptyingTheTrash) of course).</div>
+    + <a name="3-4minutesToDelete2500kEmails"></a>It took 3-4 minutes on this old computer to <span class="fluo_green_bgnd">**permanently delete at once many** (2500+) **conversations from the Trash**</span>, in my *Gmail* setup which had more than 46k emails (done [with the CLI](#immediatelyEmptyingTheTrash) of course).
+      
+    + Maybe, but I doubt, also a "timeout" problem, with a 25.9 MB email containing various pictures, might have been related with the choice of full-encryption for the search index.</div>
 
 
 *Mailpile* enables you to ***easily*** send and receive encrypted emails (believe it or not, despite all the info and caveats reported here LOL).
