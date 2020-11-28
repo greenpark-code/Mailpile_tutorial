@@ -12,6 +12,7 @@
 - **md_footnotes.pl** already included in this repository (ver. 1.1 here at the moment, please notice that there's no real options handling).  
   It is a Perl pre-processor that I have quickly made up to handle footnotes the way I like, with the resulting html syntax similar to pandoc's one (while I was on it, I made it so it **allows nested footnotes**, after reading [here](https://github.com/jgm/pandoc/issues/2053)).  
   I have been keeping it in a folder included in my PATH, but for this repository **I'm copying it directly into the src/ subfolder** (I might later create a code snipset or a repository)
+- **md_makeTOC.pl** also included in this repository (I might later create a code snipset or a repository)
 
 ## How to build the html file
 

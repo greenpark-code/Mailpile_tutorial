@@ -67,7 +67,7 @@ then
     # fi
 
     # NOTICE: in md_makeTOC.pl this approach requires $omitFirstTitle = 0, no -F command line parameter
-    cat "$mdFilename_stepB" | md_makeTOC.pl > "$tocFileName"
+    cat "$mdFilename_stepB" | ./md_makeTOC.pl > "$tocFileName"
     echo "Done."
 fi
 

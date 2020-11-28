@@ -100,7 +100,7 @@ then
     echo "Building Table Of Contents \"$tocFileName\"..."
 
     # NOTICE: in md_makeTOC.pl this approach requires $omitFirstTitle = 1
-    cat "$mdFilename_stepB" | md_makeTOC.pl -F > "$tocFileName"
+    cat "$mdFilename_stepB" | ./md_makeTOC.pl -F > "$tocFileName"
     echo "Done."
     
     

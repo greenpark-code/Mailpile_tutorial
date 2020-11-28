@@ -73,7 +73,7 @@ I've been using *Thunderbird*+*Enigmail* during years by now, but *Mailpile* has
       
     + <a name="3-4minutesToDelete2500kEmails"></a>It took 3-4 minutes on this old computer to <span class="fluo_green_bgnd">**permanently delete at once many** (2500+) **conversations from the Trash**</span>, in my *Gmail* setup which had more than 46k emails (done [with the CLI](#immediatelyEmptyingTheTrash) of course).
       
-    + A "timeout" problem, with a 25.9 MB email containing various pictures, _might_ have been related with the choice of full-encryption for the search index.</div>
+    + A <a name="timeoutAlsoMentionedHere"></a>["timeout" problem](#timeoutWLargeEmails), with a 25.9 MB email containing various pictures, _might_ have been related with the choice of full-encryption for the search index.</div>
 
 
 *Mailpile* enables you to ***easily*** send and receive encrypted emails (believe it or not, despite all the info and caveats reported here LOL).
@@ -132,6 +132,7 @@ Again, I'm using version 1.0.0rc6, which means the 6<sup>th</sup> candidate to b
   As the report says, there's **possibly a workaround:** add a second source disabling the first one, easily done in the GUI.[^adding2ndSource] Then, in case no new emails are appearing in that account, disable the currently active source and enable the other one, and of course let *Mailpile* connect to the server again.  
   **Although nobody else has reported that issue, which is happening with vivaldi.net, this is definitely *the* only real single important issue in my opinion at the moment, I hope it will be looked into soon, I would be able to recommend *Mailpile* more effectively.**[^stormyWeather]
 - Icons <a name="toolbarIconsBadlyPositioned"></a>in the toolbar can be badly positioned if the toolbar isn't long enough. **Enlarging the GUI window horizontally** helps, if possible ([below](#mouseHoverHintsInTheWay) there is mention of another reason for it).
+- There <a name="timeoutWLargeEmails"></a>might be a timeout opening large emails (also mentioned [here in this doc](#timeoutAlsoMentionedHere)), it has been reported [here in *GitHub*](https://github.com/mailpile/Mailpile/issues/2050), I'll add a workaround to this tutorial as soon as I have one.
 
 </div>
 
@@ -195,6 +196,20 @@ Again, I'm using version 1.0.0rc6, which means the 6<sup>th</sup> candidate to b
   Disabling keepalive and setting an interval of 300 seconds between connections is mentioned in an [issue](https://github.com/mailpile/Mailpile/issues/2272) report [mentioned above](#newEmailNotAppearing), which links [**this page**](https://community.mailpile.is/t/hints-for-developers/562) explaining **how to see all settings and how to modify those settings via the <span class="fluo_green_bgnd"><fixed>set</fixed></span> command**.  
   **You can use the <span class="fluo_green_bgnd"><fixed>unset</fixed></span> command, identifying settings the same way, to restore default values.**  
   By default, interval = 300 appears to be commented out. I guess it's still a default behavior in case keepalive has not been possible for a while. **After having been offline for hours, I'd expect the 300 seconds to have elapsed.** Maybe what's not easily detectable in a way that would be portable to different platforms is that the computer is back online without actually trying to connect, in lack of which possibility the philosophy might have been to stop trying on and on. <span class="fluo_orange_bgnd">**[needs clarification]**</span>
+
+<a name="WishList"></a>
+
+## Wish List
+
+I might be adding a few items in the future, but for now this is quite a short list.
+
+<a name="InListsOfEmails"></a>
+
+### In lists of emails
+
+- When the sender is one of the accounts I've configured in *Mailpile*, I'd like to see the recipient instead of the sender as a priority.
+- I'd like to be able to switch to date-hour visualization always, yyyy-mm-dd hh:mm:ss (or without seconds), instead of "Friday" or "10 hours".
+
 
 <a name="EncryptionMadeEasy"></a>
 

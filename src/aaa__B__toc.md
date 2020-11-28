@@ -3,6 +3,8 @@
     - [**Breakthrough**](#breakthrough)
     - [**Open issues**](#OpenIssues)
     - [**Non-issues to be aware of**](#notIssuesToBeAwareOf)
+    - [**Wish List**](#WishList)
+        - [**In lists of emails**](#InListsOfEmails)
     - [**Encryption made easy for non-tech savvies**](#EncryptionMadeEasy)
     - [**Tags**](#Tags)
     - [**Design**](#Design)

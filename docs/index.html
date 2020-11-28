@@ -524,7 +524,7 @@ img {
 </style>
 <!-- ACTUAL CONTENT STARTS HERE --->
 <h1 id="mailpile-post-installation-tutorial"><em>Mailpile</em> post-installation tutorial</h1>
-<p><small>Ver. 2020-11-23 02:52:06 UTC (first preview release: 2020-10-06)   –   Based on <em>Mailpile</em> 1.0.0rc6<br />
+<p><small>Ver. 2020-11-28 15:00:08 UTC (first preview release: 2020-10-06)   –   Based on <em>Mailpile</em> 1.0.0rc6<br />
 GitHub repository: <a href="https://github.com/greenpark-code/Mailpile_tutorial" class="uri">https://github.com/greenpark-code/Mailpile_tutorial</a></small></p>
 <div class="lightblue_frame">
 <ul>
@@ -534,6 +534,10 @@ GitHub repository: <a href="https://github.com/greenpark-code/Mailpile_tutorial"
 <li><a href="#breakthrough"><strong>Breakthrough</strong></a></li>
 <li><a href="#OpenIssues"><strong>Open issues</strong></a></li>
 <li><a href="#notIssuesToBeAwareOf"><strong>Non-issues to be aware of</strong></a></li>
+<li><a href="#WishList"><strong>Wish List</strong></a>
+<ul>
+<li><a href="#InListsOfEmails"><strong>In lists of emails</strong></a></li>
+</ul></li>
 <li><a href="#EncryptionMadeEasy"><strong>Encryption made easy for non-tech savvies</strong></a></li>
 <li><a href="#Tags"><strong>Tags</strong></a></li>
 <li><a href="#Design"><strong>Design</strong></a></li>
@@ -684,6 +688,7 @@ I understand that the developers had to respect priorities during this certainly
 As the report says, there's <strong>possibly a workaround:</strong> add a second source disabling the first one, easily done in the GUI.<sup>[<a href="#fn6" id="fnref6">6</a>]</sup> Then, in case no new emails are appearing in that account, disable the currently active source and enable the other one, and of course let <em>Mailpile</em> connect to the server again.<br />
 <strong>Although nobody else has reported that issue, which is happening with vivaldi.net, this is definitely <em>the</em> only real single important issue in my opinion at the moment, I hope it will be looked into soon, I would be able to recommend <em>Mailpile</em> more effectively.</strong><sup>[<a href="#fn7" id="fnref7">7</a>]</sup></li>
 <li>Icons <a name="toolbarIconsBadlyPositioned"></a>in the toolbar can be badly positioned if the toolbar isn't long enough. <strong>Enlarging the GUI window horizontally</strong> helps, if possible (<a href="#mouseHoverHintsInTheWay">below</a> there is mention of another reason for it).</li>
+<li>There <a name="timeoutWLargeEmails"></a>might be a timeout opening large emails (also mentioned <a href="#timeoutAlsoMentionedHere">here in this doc</a>), it has been reported <a href="https://github.com/mailpile/Mailpile/issues/2050">here in <em>GitHub</em></a>, I'll add a workaround to this tutorial as soon as I have one.</li>
 </ul>
 </div>
 <p><a name="notIssuesToBeAwareOf"></a></p>
@@ -724,6 +729,15 @@ I'd like to be able to just switch it off. <span class="fluo_orange_bgnd"><stron
 For specific recipients, I might want to modify my signature at the bottom, e.g. omit my cell phone number or PGP related lines.<br />
 Apparently <em>Mailpile</em> obliges me to change the signature in the profile. <span class="fluo_orange_bgnd"><strong>[needs clarification]</strong></span></li>
 <li><p><strong>It's <a name="nothingElseWhileDeleting"></a>possibly good practice not to do anything else while <em>Mailpile</em> is permanently deleting emails</strong>. (Today I launched the delete command in the CLIto immediately delete various emails from my huge <em>GMail</em> setup, which was probably going to take a few seconds on this old computer, with fully encrypted index. So, after launching the delete command, I immediately started doing something else via <em>Mailpile</em>'s the GUI. The GUI worked fine but I got a message in the CLI that the delete operation had failed. I launched it again without doing anything else and it went through just fine.)</p></li>
+</ul>
+<p><a name="WishList"></a></p>
+<h2 id="wish-list">Wish List</h2>
+<p>I might be adding a few items in the future, but for now this is quite a short list.</p>
+<p><a name="InListsOfEmails"></a></p>
+<h3 id="in-lists-of-emails">In lists of emails</h3>
+<ul>
+<li>When the sender is one of the accounts I've configured in <em>Mailpile</em>, I'd like to see the recipient instead of the sender as a priority.</li>
+<li>I'd like to be able to switch to date-hour visualization always, yyyy-mm-dd hh:mm:ss (or without seconds), instead of &quot;Friday&quot; or &quot;10 hours&quot;.</li>
 </ul>
 <p><a name="EncryptionMadeEasy"></a></p>
 <h2 id="encryption-made-easy-for-non-tech-savvies">Encryption made easy for non-tech savvies</h2>
@@ -2023,7 +2037,7 @@ You can not use <em>Mailpile</em> from the CLI or the GUI before having made at 
 <pre><code>cleanup                       Perform cleanup actions (runs before shutdown)</code></pre>
 <p>I guess that's the reason why shutdown can take some time (possibly a bit more because I've opted for a strong encryption of the search index).</p></li>
 <li><p><a name="3-4minutesToDelete2500kEmails"></a>It took 3-4 minutes on this old computer to <span class="fluo_green_bgnd"><strong>permanently delete at once many</strong> (2500+) <strong>conversations from the Trash</strong></span>, in my <em>Gmail</em> setup which had more than 46k emails (done <a href="#immediatelyEmptyingTheTrash">with the CLI</a> of course).</p></li>
-<li>A &quot;timeout&quot; problem, with a 25.9 MB email containing various pictures, <em>might</em> have been related with the choice of full-encryption for the search index.
+<li>A <a name="timeoutAlsoMentionedHere"></a><a href="#timeoutWLargeEmails">&quot;timeout&quot; problem</a>, with a 25.9 MB email containing various pictures, <em>might</em> have been related with the choice of full-encryption for the search index.
 </div>
  <a href="#fnref1">↩</a>
 <p>
