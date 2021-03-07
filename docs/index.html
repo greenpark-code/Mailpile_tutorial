@@ -524,8 +524,9 @@ img {
 </style>
 <!-- ACTUAL CONTENT STARTS HERE --->
 <h1 id="mailpile-post-installation-tutorial"><em>Mailpile</em> post-installation tutorial</h1>
-<p><small>Ver. 2020-11-28 15:00:08 UTC (first preview release: 2020-10-06)   –   Based on <em>Mailpile</em> 1.0.0rc6<br />
-GitHub repository: <a href="https://github.com/greenpark-code/Mailpile_tutorial" class="uri">https://github.com/greenpark-code/Mailpile_tutorial</a></small></p>
+<p><small>Ver. 2021-03-07 15:20:40 UTC (first preview release: 2020-10-06)   –   Based on <em>Mailpile</em> 1.0.0rc6<br />
+GitHub repository: <a href="https://github.com/greenpark-code/Mailpile_tutorial" class="uri">https://github.com/greenpark-code/Mailpile_tutorial</a><br />
+Community: <a href="https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597" class="uri">https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597</a></small></p>
 <div class="lightblue_frame">
 <ul>
 <li><a href="#Disclaimers"><strong>Disclaimers</strong></a></li>
@@ -697,9 +698,15 @@ As the report says, there's <strong>possibly a workaround:</strong> add a second
 <li><p><span class="fluo_green_bgnd"><strong>NOTICE:</strong> if you send an email <u><em>to yourself</em></u> from <em>Mailpile</em> itself, <em>Mailpile</em> won't show it in the <em>Inbox</em>, you'll only see it among <em>Sent</em> emails, despite the fact that by default <em>Mailpile</em> sends a copy to your account.</span></p>
 <p>(<u><em>To yourself</em></u> meaning: <u>using <em>Mailpile</em> to send</u> from one to another of the email accounts you have configured in <em>Mailpile</em>, or to the same one from which you are sending.<br />
 You <em>will</em> see that email in <em>Mailpile</em>'s Inbox if you have sent it from another client, e.g. <em>Thunderbird</em>, even if sent from one of the email addresses that you have also configured in <em>Mailpile</em>.)</p>
-<strong>This can be confusing <em>at first</em>, but it's actually a smart way to allow you to handle your emails both in webmail <em>and</em> with <em>Mailpile</em>, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.</strong><br />
+<p><strong>This can be confusing <em>at first</em>, but it actually makes it easier to handle your emails both in webmail <em>and</em> with <em>Mailpile</em>, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.</strong><br />
 (You can choose at any moment <em>not</em> to send a copy to yourself, and <em>not</em> to leave emails on remote servers.)<br />
- </li>
+ <br />
+<span class="fluo_green_bgnd"><strong><em>JackDca</em> <a href="https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597">kindly shared in-depth knowledge</a>, it does not happen with <em>any</em> ISP:</strong></span></p>
+<blockquote>
+<p>Regarding <strong>send(ing) an email to yourself from Mailpile</strong>, the behaviour depends on the ISP that you are using. Mailpile uses the Message-ID in the email metadata. Emails that have the same Message-ID are treated as duplicates and are not shown.<br />
+Some ISPs replace the Mailpile-generated Message-ID of an outgoing email with their own, with the result that the received email will be shown in the Inbox.<br />
+Other ISPs retain the Message-ID assigned by Mailpile so that the received email is ignored as a duplicate.</p>
+</blockquote></li>
 <li>When you add an email account and connect to its server, <em>Mailpile</em> by default starts downloading <em>all</em> emails in it, starting with the most recent ones, it doesn't at the moment offer an option to limit the synchronization to the last <em>n</em> days.<br />
 It has been <a href="https://github.com/mailpile/Mailpile/issues/1098">suggested on <em>GitHub</em></a> to implement the option to limit download to the last <em>n</em> days. The project leader answered explaining that it isn't straightforward to implement that feature without having to parse all emails, considering that certain servers do not maintain an index on date-time.<br />
  </li>

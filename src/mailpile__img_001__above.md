@@ -149,9 +149,15 @@ Again, I'm using version 1.0.0rc6, which means the 6<sup>th</sup> candidate to b
     (<u>*To yourself*</u> meaning: <u>using *Mailpile* to send</u> from one to another of the email accounts you have configured in *Mailpile*, or to the same one from which you are sending.  
     You *will* see that email in *Mailpile*'s Inbox if you have sent it from another client, e.g. *Thunderbird*, even if sent from one of the email addresses that you have also configured in *Mailpile*.)  
     
-    **This can be confusing *at first*, but it's actually a smart way to allow you to handle your emails both in webmail *and* with *Mailpile*, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.**  
+    **This can be confusing *at first*, but it actually makes it easier to handle your emails both in webmail *and* with *Mailpile*, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.**  
     (You can choose at any moment *not* to send a copy to yourself, and *not* to leave emails on remote servers.)  
-    &nbsp;
+    &nbsp;  
+    <span class="fluo_green_bgnd">***JackDca* [kindly shared in-depth knowledge](https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597), it does not happen with *any* ISP:**</span>  
+    
+    > Regarding **send(ing) an email to yourself from Mailpile**, the behaviour depends on the ISP that you are using. Mailpile uses the Message-ID in the email metadata. Emails that have the same Message-ID are treated as duplicates and are not shown.  
+    Some ISPs replace the Mailpile-generated Message-ID of an outgoing email with their own, with the result that the received email will be shown in the Inbox.  
+    Other ISPs retain the Message-ID assigned by Mailpile so that the received email is ignored as a duplicate.
+    
 - When you add an email account and connect to its server, *Mailpile* by default starts downloading *all* emails in it, starting with the most recent ones, it doesn't at the moment offer an option to limit the synchronization to the last *n* days.  
   It has been [suggested on *GitHub*](https://github.com/mailpile/Mailpile/issues/1098) to implement the option to limit download to the last *n* days. The project leader answered explaining that it isn't straightforward to implement that feature without having to parse all emails, considering that certain servers do not maintain an index on date-time.  
   &nbsp;
