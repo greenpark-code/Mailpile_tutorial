@@ -152,7 +152,7 @@ Again, I'm using version 1.0.0rc6, which means the 6<sup>th</sup> candidate to b
     **This can be confusing *at first*, but it actually makes it easier to handle your emails both in webmail *and* with *Mailpile*, while avoiding to see duplicates of all emails you send, despite having a copy on remote servers.**  
     (You can choose at any moment *not* to send a copy to yourself, and *not* to leave emails on remote servers.)  
     &nbsp;  
-    <span class="fluo_green_bgnd">***JackDca* [kindly shared in-depth knowledge](https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597), it does not happen with *any* ISP:**</span>  
+    ***JackDca* [kindly shared in-depth knowledge](https://community.mailpile.is/t/mailpile-tutorial-for-newcomers/597/4?u=greenpark)**, <span class="fluo_green_bgnd">**it does not happen with *any* ISP:**</span>  
     
     > Regarding **send(ing) an email to yourself from Mailpile**, the behaviour depends on the ISP that you are using. Mailpile uses the Message-ID in the email metadata. Emails that have the same Message-ID are treated as duplicates and are not shown.  
     Some ISPs replace the Mailpile-generated Message-ID of an outgoing email with their own, with the result that the received email will be shown in the Inbox.  
