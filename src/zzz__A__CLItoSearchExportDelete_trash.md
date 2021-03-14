@@ -128,7 +128,7 @@ Even if it turned out that there is no way...
 
 <a name="VeryImpressedSearchEngine"><div class="fluo_green_frame">**I'm *very* impressed with the search engine, it's very fast. I've also tested searching through encrypted emails and it works just the same.**
 
-</a>Days later: I'm downloading years of emails from a GMail account, I already have 4.7 GBytes, 7344 emails (and still downloading, they might sum up 12 GBytes), and **I'm getting answers from the search engine in the CLI in 0.002-0.090 sec on a 10+ years old computer, with fully encrypted search index.** About an hour later, I have 5.9 GB, 8886 mails (still downloading) and I'm getting search results in 0.002 1.178 seconds (the 1.178 seconds one was then always repeated in 0.215 seconds, maybe the disk was busy with something else the first time).**
+</a>Days later: I'm downloading years of emails from a GMail account, I already have 4.7 GBytes, 7344 emails (and still downloading, they might sum up 12 GBytes), and **I'm getting answers from the search engine in the CLI in 0.002-0.090 sec on a 10+ years old computer, with fully encrypted search index.** About an hour later, I have 5.9 GB, 8886 mails (still downloading) and I'm getting search results in 0.002-1.178 seconds (the 1.178 seconds one was then always repeated in 0.215 seconds, maybe the disk was busy with something else the first time).**
 </div>
 
 Don't forget the [**recommendation**](#IfYouEditTagNameThenEditKeywordToo) I've included in a previous section of this document.
@@ -142,7 +142,7 @@ If on the GUI I click the ***Settings and Tools*** gear icon in the upper right 
 `n` next page  
 `p` previous page
 
-Of course I could you both resources, 120 lines per page and I'll scroll through them in the terminal line.
+Of course I could use both resources, setting for instance 120 lines per page and scrolling through them in the terminal window.
 
 The chosen value will affect both the GUI and the terminal window, I haven't found out if it's possible (without using the python shell) to set two different values. <span class="fluo_orange_bgnd">**[needs clarification]**</span>
 
